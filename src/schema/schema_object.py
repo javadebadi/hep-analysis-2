@@ -1,3 +1,4 @@
+import os
 from .exception import MissingRequiredFieldError
 
 class SchemaObject:
@@ -147,12 +148,15 @@ class SchemaObject:
         # __init__ />
         return s
 
-    def write_python_class(self):
+    def write_python_class(self, base_path=None):
         s = self.get_python_class()
         if self.name is None:
             filepath = "model.py"
         else:
             filepath = self.name.lower() + ".py"
+        if base_path is not None:
+            os.makedirs(base_path, exist_ok=True)
+            filepath = os.path.join(base_path, filepath)
         with open(filepath, "w") as f:
             f.write(s)
         return s
