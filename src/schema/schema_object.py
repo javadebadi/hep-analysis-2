@@ -1,5 +1,6 @@
 import os
 from .exception import MissingRequiredFieldError
+from .schema_primitive import SchemaPrimitive
 
 class SchemaObject:
 
@@ -21,6 +22,17 @@ class SchemaObject:
         self.old_new_keys = {}
         self.new_old_keys = {}
         self.clean()
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        if "_" in name:
+            self._name = "".join([n.capitalize() for n in name.split("_")])
+        else:
+            self._name = name[0].capitalize() + name[1:]
 
     def _clean_property_key(self, property_key):
         if property_key == '$schema':
@@ -120,36 +132,59 @@ class SchemaObject:
 
     def _get_class_name(self):
         if self.name is not None:
-            return self.name.capitalize()
+            return self.name
         else:
             return "".join([token.capitalize() for token in self.title.split(" ")])
 
     def _build_properties_data_type(self):
         self.processed_properties = {}
+        data_types_code = ''
         for property_key, property_value in self.properties.items():
             if property_value['type'] == 'object':
-                self.processed_properties[property_key] = SchemaObject().set_from_dict(property_value)
+                self.processed_properties[property_key] = SchemaObject(property_key).set_from_dict(property_value)
+                data_types_code += self.processed_properties[property_key].get_python_class() + "\n\n"
+            elif property_value['type'] in ['string', 'int', 'boolean']:
+                x = SchemaPrimitive(property_key).set_from_dict(property_value)
+                self.processed_properties[x.name] = x
+                self.old_new_keys.update(x.name_mapping)
+        return data_types_code
 
-
-    def get_python_class(self):
-        self._build_properties_data_type()
-        s = "import typing\n\n\n" # import line
+    def get_python_class(self, imports_part=False):
+        data_types_code = self._build_properties_data_type()
+        if imports_part:
+            s = "import typing\n\n\n" # import line
+        else:
+            s = ""
+        s += data_types_code
         s += f"class {self._get_class_name()}:\n\n" # define class
         # < __init__ 
         s += "\tdef __init__(\n"
         s += "\t"*2 + "self," + "\n"
-        for key, schema_object in self.processed_properties.items():
-            # init def and args
-            s += "\t"*2 + key + schema_object.get_annotation_type() + " " + schema_object.get_default_value() + ",\n"
+        if len(self.processed_properties) > 0:
+            for key, schema_object in self.processed_properties.items():
+                # init def and args
+                s += "\t"*2 + key + schema_object.get_annotation_type() + " " + schema_object.get_default_value() + ",\n"
         s += "\t"*2 + ") -> None:" + "\n"
         # init body
-        for key, schema_object in self.processed_properties.items():
-            s += "\t"*2 + f"self.{key} = {key}\n"
+        if len(self.processed_properties) > 0:
+            for key, schema_object in self.processed_properties.items():
+                s += "\t"*2 + f"self.{key} = {key}\n"
+        else:
+            s += "\t"*2 + "pass\n"
         # __init__ />
+        s += "\n"
+
+        # @property
+        if len(self.processed_properties) > 0:
+            for key, schema_object in self.processed_properties.items():
+                if type(schema_object) == SchemaPrimitive:
+                    s += schema_object.get_as_property_in_class_code()
+                elif type(schema_object) == SchemaObject:
+                    s += schema_object.get_as_property_in_class_code(property_key=key)
         return s
 
     def write_python_class(self, base_path=None):
-        s = self.get_python_class()
+        s = self.get_python_class(imports_part=True)
         if self.name is None:
             filepath = "model.py"
         else:
@@ -159,4 +194,15 @@ class SchemaObject:
             filepath = os.path.join(base_path, filepath)
         with open(filepath, "w") as f:
             f.write(s)
+        return s
+
+    def get_as_property_in_class_code(self, tabs=1, property_key=None):
+        if property_key is None:
+            name = self.name
+        else:
+            name = property_key
+        s = "\t"*tabs + "@property\n"
+        s += "\t"*(tabs) + f"def {name}(self) -> " + self.get_annotation_type(colons=False) + ":\n"
+        s += "\t"*(tabs + 1) + f"return self.{name}\n"
+        s += "\n"
         return s
