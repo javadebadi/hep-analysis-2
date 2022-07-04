@@ -57,7 +57,7 @@ class SchemaPrimitive:
     def get_as_property_in_class_code(self, tabs=1, property_key=None):
         s = "\t"*tabs + "@property\n"
         s += "\t"*(tabs) + f"def {self.name}(self) -> " + self.get_annotation_type(colons=False) + ":\n"
-        s += "\t"*(tabs + 1) + f"return self.{self.name}\n"
+        s += "\t"*(tabs + 1) + f"return self._{self.name}\n"
         s += "\n"
         s += "\t"*tabs + f"@{self.name}.setter\n"
         s += "\t"*(tabs) + f"def {self.name}(self, {self.name}) -> None:\n"
@@ -68,11 +68,14 @@ class SchemaPrimitive:
 
     def get_assertion_expression(self, tabs=2):
         s = ""
+        s += "\t"*tabs + f"if {self.name} is not None:\n"
         if self.type_ == 'string':
-            if self.minLength is not None:
-                s += "\t"*tabs + f"assert len({self.name}) >= {self.minLength}\n"
+            if self.minLength is not None:   
+                s += "\t"*(tabs + 1) + f"assert len({self.name}) >= {self.minLength}\n"
             if self.maxLength is not None:
-                s += "\t"*tabs + f"assert len({self.name}) <= {self.maxLength}\n"
+                s += "\t"*(tabs + 1) + f"assert len({self.name}) <= {self.maxLength}\n"
         if self.enum:
-            s += "\t"*tabs + f"assert self.{self.name} in {self.enum}\n"
+            s += "\t"*(tabs + 1) + f"assert self.{self.name} in {self.enum}\n"
+        else:
+            s += "\t"*(tabs + 1) + "pass\n"
         return s

@@ -21,58 +21,104 @@ class AcquisitionSource:
 
 	@property
 	def datetime(self) -> str:
-		return self.datetime
+		return self._datetime
 
 	@datetime.setter
 	def datetime(self, datetime) -> None:
-		assert len(datetime) >= 1
+		if datetime is not None:
+			assert len(datetime) >= 1
+			pass
 		self._datetime = datetime
 
 	@property
 	def email(self) -> str:
-		return self.email
+		return self._email
 
 	@email.setter
 	def email(self, email) -> None:
-		assert len(email) >= 1
+		if email is not None:
+			assert len(email) >= 1
+			pass
 		self._email = email
 
 	@property
 	def method(self) -> str:
-		return self.method
+		return self._method
 
 	@method.setter
 	def method(self, method) -> None:
-		assert len(method) >= 1
+		if method is not None:
+			assert len(method) >= 1
+			pass
 		self._method = method
 
 	@property
 	def orcid(self) -> str:
-		return self.orcid
+		return self._orcid
 
 	@orcid.setter
 	def orcid(self, orcid) -> None:
-		assert len(orcid) >= 1
+		if orcid is not None:
+			assert len(orcid) >= 1
+			pass
 		self._orcid = orcid
 
 	@property
 	def source(self) -> str:
-		return self.source
+		return self._source
 
 	@source.setter
 	def source(self, source) -> None:
-		assert len(source) >= 1
+		if source is not None:
+			assert len(source) >= 1
+			pass
 		self._source = source
 
 	@property
 	def submission_number(self) -> str:
-		return self.submission_number
+		return self._submission_number
 
 	@submission_number.setter
 	def submission_number(self, submission_number) -> None:
-		assert len(submission_number) >= 1
+		if submission_number is not None:
+			assert len(submission_number) >= 1
+			pass
 		self._submission_number = submission_number
 
+	def set_from_dict(self, data: dict):
+		if data is not None:
+			return AcquisitionSource(
+				datetime=data.get('datetime', None),
+				email=data.get('email', None),
+				method=data.get('method', None),
+				orcid=data.get('orcid', None),
+				source=data.get('source', None),
+				submission_number=data.get('submission_number', None),
+			)
+		else:
+			return None
+
+	def __str__(self):
+		s = ''
+		s += 'datetime:  '
+		s += self.datetime.__str__() if (self.datetime is not None) else ''
+		s += '\n'
+		s += 'email:  '
+		s += self.email.__str__() if (self.email is not None) else ''
+		s += '\n'
+		s += 'method:  '
+		s += self.method.__str__() if (self.method is not None) else ''
+		s += '\n'
+		s += 'orcid:  '
+		s += self.orcid.__str__() if (self.orcid is not None) else ''
+		s += '\n'
+		s += 'source:  '
+		s += self.source.__str__() if (self.source is not None) else ''
+		s += '\n'
+		s += 'submission_number:  '
+		s += self.submission_number.__str__() if (self.submission_number is not None) else ''
+		s += '\n'
+		return s
 
 
 class Name:
@@ -91,40 +137,74 @@ class Name:
 
 	@property
 	def numeration(self) -> str:
-		return self.numeration
+		return self._numeration
 
 	@numeration.setter
 	def numeration(self, numeration) -> None:
-		assert len(numeration) >= 1
+		if numeration is not None:
+			assert len(numeration) >= 1
+			pass
 		self._numeration = numeration
 
 	@property
 	def preferred_name(self) -> str:
-		return self.preferred_name
+		return self._preferred_name
 
 	@preferred_name.setter
 	def preferred_name(self, preferred_name) -> None:
-		assert len(preferred_name) >= 1
+		if preferred_name is not None:
+			assert len(preferred_name) >= 1
+			pass
 		self._preferred_name = preferred_name
 
 	@property
 	def title(self) -> str:
-		return self.title
+		return self._title
 
 	@title.setter
 	def title(self, title) -> None:
-		assert len(title) >= 1
+		if title is not None:
+			assert len(title) >= 1
+			pass
 		self._title = title
 
 	@property
 	def value(self) -> str:
-		return self.value
+		return self._value
 
 	@value.setter
 	def value(self, value) -> None:
-		assert len(value) >= 1
+		if value is not None:
+			assert len(value) >= 1
+			pass
 		self._value = value
 
+	def set_from_dict(self, data: dict):
+		if data is not None:
+			return Name(
+				numeration=data.get('numeration', None),
+				preferred_name=data.get('preferred_name', None),
+				title=data.get('title', None),
+				value=data.get('value', None),
+			)
+		else:
+			return None
+
+	def __str__(self):
+		s = ''
+		s += 'numeration:  '
+		s += self.numeration.__str__() if (self.numeration is not None) else ''
+		s += '\n'
+		s += 'preferred_name:  '
+		s += self.preferred_name.__str__() if (self.preferred_name is not None) else ''
+		s += '\n'
+		s += 'title:  '
+		s += self.title.__str__() if (self.title is not None) else ''
+		s += '\n'
+		s += 'value:  '
+		s += self.value.__str__() if (self.value is not None) else ''
+		s += '\n'
+		return s
 
 
 class NewRecord:
@@ -137,13 +217,29 @@ class NewRecord:
 
 	@property
 	def ref(self) -> str:
-		return self.ref
+		return self._ref
 
 	@ref.setter
 	def ref(self, ref) -> None:
-		assert len(ref) >= 1
+		if ref is not None:
+			assert len(ref) >= 1
+			pass
 		self._ref = ref
 
+	def set_from_dict(self, data: dict):
+		if data is not None:
+			return NewRecord(
+				ref=data.get('$ref', None),
+			)
+		else:
+			return None
+
+	def __str__(self):
+		s = ''
+		s += 'ref:  '
+		s += self.ref.__str__() if (self.ref is not None) else ''
+		s += '\n'
+		return s
 
 
 class Self:
@@ -156,13 +252,29 @@ class Self:
 
 	@property
 	def ref(self) -> str:
-		return self.ref
+		return self._ref
 
 	@ref.setter
 	def ref(self, ref) -> None:
-		assert len(ref) >= 1
+		if ref is not None:
+			assert len(ref) >= 1
+			pass
 		self._ref = ref
 
+	def set_from_dict(self, data: dict):
+		if data is not None:
+			return Self(
+				ref=data.get('$ref', None),
+			)
+		else:
+			return None
+
+	def __str__(self):
+		s = ''
+		s += 'ref:  '
+		s += self.ref.__str__() if (self.ref is not None) else ''
+		s += '\n'
+		return s
 
 
 class Authors:
@@ -199,96 +311,196 @@ class Authors:
 
 	@property
 	def acquisition_source(self) -> AcquisitionSource:
-		return self.acquisition_source
+		return self._acquisition_source
+
+	@acquisition_source.setter
+	def acquisition_source(self, acquisition_source) -> None:
+		pass
+		self._acquisition_source = acquisition_source
 
 	@property
 	def birth_date(self) -> str:
-		return self.birth_date
+		return self._birth_date
 
 	@birth_date.setter
 	def birth_date(self, birth_date) -> None:
-		assert len(birth_date) >= 1
+		if birth_date is not None:
+			assert len(birth_date) >= 1
+			pass
 		self._birth_date = birth_date
 
 	@property
 	def death_date(self) -> str:
-		return self.death_date
+		return self._death_date
 
 	@death_date.setter
 	def death_date(self, death_date) -> None:
-		assert len(death_date) >= 1
+		if death_date is not None:
+			assert len(death_date) >= 1
+			pass
 		self._death_date = death_date
 
 	@property
 	def deleted(self) -> bool:
-		return self.deleted
+		return self._deleted
 
 	@deleted.setter
 	def deleted(self, deleted) -> None:
+		if deleted is not None:
+			pass
 		self._deleted = deleted
 
 	@property
 	def legacy_creation_date(self) -> str:
-		return self.legacy_creation_date
+		return self._legacy_creation_date
 
 	@legacy_creation_date.setter
 	def legacy_creation_date(self, legacy_creation_date) -> None:
-		assert len(legacy_creation_date) >= 1
+		if legacy_creation_date is not None:
+			assert len(legacy_creation_date) >= 1
+			pass
 		self._legacy_creation_date = legacy_creation_date
 
 	@property
 	def legacy_version(self) -> str:
-		return self.legacy_version
+		return self._legacy_version
 
 	@legacy_version.setter
 	def legacy_version(self, legacy_version) -> None:
-		assert len(legacy_version) >= 1
+		if legacy_version is not None:
+			assert len(legacy_version) >= 1
+			pass
 		self._legacy_version = legacy_version
 
 	@property
 	def name(self) -> Name:
-		return self.name
+		return self._name
+
+	@name.setter
+	def name(self, name) -> None:
+		pass
+		self._name = name
 
 	@property
 	def new_record(self) -> NewRecord:
-		return self.new_record
+		return self._new_record
+
+	@new_record.setter
+	def new_record(self, new_record) -> None:
+		pass
+		self._new_record = new_record
 
 	@property
 	def status(self) -> str:
-		return self.status
+		return self._status
 
 	@status.setter
 	def status(self, status) -> None:
-		assert len(status) >= 1
+		if status is not None:
+			assert len(status) >= 1
+			pass
 		self._status = status
 
 	@property
 	def stub(self) -> bool:
-		return self.stub
+		return self._stub
 
 	@stub.setter
 	def stub(self, stub) -> None:
+		if stub is not None:
+			pass
 		self._stub = stub
 
 	@property
 	def schema(self) -> str:
-		return self.schema
+		return self._schema
 
 	@schema.setter
 	def schema(self, schema) -> None:
-		assert len(schema) >= 1
+		if schema is not None:
+			assert len(schema) >= 1
+			pass
 		self._schema = schema
 
 	@property
 	def bucket(self) -> str:
-		return self.bucket
+		return self._bucket
 
 	@bucket.setter
 	def bucket(self, bucket) -> None:
-		assert len(bucket) >= 1
+		if bucket is not None:
+			assert len(bucket) >= 1
+			pass
 		self._bucket = bucket
 
 	@property
 	def self_(self) -> Self:
-		return self.self_
+		return self._self_
 
+	@self_.setter
+	def self_(self, self_) -> None:
+		pass
+		self._self_ = self_
+
+	def set_from_dict(self, data: dict):
+		if data is not None:
+			return Authors(
+				acquisition_source=AcquisitionSource().set_from_dict(data=data.get('acquisition_source', None)),
+				birth_date=data.get('birth_date', None),
+				death_date=data.get('death_date', None),
+				deleted=data.get('deleted', None),
+				legacy_creation_date=data.get('legacy_creation_date', None),
+				legacy_version=data.get('legacy_version', None),
+				name=Name().set_from_dict(data=data.get('name', None)),
+				new_record=NewRecord().set_from_dict(data=data.get('new_record', None)),
+				status=data.get('status', None),
+				stub=data.get('stub', None),
+				schema=data.get('$schema', None),
+				bucket=data.get('_bucket', None),
+				self_=Self().set_from_dict(data=data.get('self', None)),
+			)
+		else:
+			return None
+
+	def __str__(self):
+		s = ''
+		s += 'acquisition_source:  '
+		s += self.acquisition_source.__str__() if (self.acquisition_source is not None) else ''
+		s += '\n'
+		s += 'birth_date:  '
+		s += self.birth_date.__str__() if (self.birth_date is not None) else ''
+		s += '\n'
+		s += 'death_date:  '
+		s += self.death_date.__str__() if (self.death_date is not None) else ''
+		s += '\n'
+		s += 'deleted:  '
+		s += self.deleted.__str__() if (self.deleted is not None) else ''
+		s += '\n'
+		s += 'legacy_creation_date:  '
+		s += self.legacy_creation_date.__str__() if (self.legacy_creation_date is not None) else ''
+		s += '\n'
+		s += 'legacy_version:  '
+		s += self.legacy_version.__str__() if (self.legacy_version is not None) else ''
+		s += '\n'
+		s += 'name:  '
+		s += self.name.__str__() if (self.name is not None) else ''
+		s += '\n'
+		s += 'new_record:  '
+		s += self.new_record.__str__() if (self.new_record is not None) else ''
+		s += '\n'
+		s += 'status:  '
+		s += self.status.__str__() if (self.status is not None) else ''
+		s += '\n'
+		s += 'stub:  '
+		s += self.stub.__str__() if (self.stub is not None) else ''
+		s += '\n'
+		s += 'schema:  '
+		s += self.schema.__str__() if (self.schema is not None) else ''
+		s += '\n'
+		s += 'bucket:  '
+		s += self.bucket.__str__() if (self.bucket is not None) else ''
+		s += '\n'
+		s += 'self_:  '
+		s += self.self_.__str__() if (self.self_ is not None) else ''
+		s += '\n'
+		return s

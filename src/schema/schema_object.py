@@ -37,6 +37,8 @@ class SchemaObject:
     def _clean_property_key(self, property_key):
         if property_key == '$schema':
             property_key = 'schema'
+        if property_key == '$ref':
+            property_key = 'ref'
         elif property_key == 'self':
             property_key = 'self_'
         elif property_key.startswith("_"):
@@ -181,6 +183,25 @@ class SchemaObject:
                     s += schema_object.get_as_property_in_class_code()
                 elif type(schema_object) == SchemaObject:
                     s += schema_object.get_as_property_in_class_code(property_key=key)
+
+        # set from dict
+        s += "\t" + f"def set_from_dict(self, data: dict):\n"
+        s += "\t"*2 + "if data is not None:\n"
+        s += "\t"*3 + f"return {self._get_class_name()}(\n"
+        for key, schema_object in self.processed_properties.items():
+            if type(schema_object) == SchemaPrimitive:
+                s += "\t"*4 + key + f"=data.get('{self.new_old_keys[key]}', None),\n"
+            elif type(schema_object) == SchemaObject:
+                s += "\t"*4 + key + f"={schema_object.name}().set_from_dict(data=data.get" + f"('{self.new_old_keys[key]}', None)),\n"
+        # for old_key, new_key in self.old_new_keys.items():
+        #     s += "\t"*3 + new_key + f"=data.get('{old_key}', None),\n"
+        s += "\t"*3 + ")\n"
+        s += "\t"*2 + "else:\n"
+        s += "\t"*3 + "return None"
+        s += "\n"
+        s += "\n"
+        s += self.get___str__expression()
+        s += "\n"
         return s
 
     def write_python_class(self, base_path=None):
@@ -203,6 +224,27 @@ class SchemaObject:
             name = property_key
         s = "\t"*tabs + "@property\n"
         s += "\t"*(tabs) + f"def {name}(self) -> " + self.get_annotation_type(colons=False) + ":\n"
-        s += "\t"*(tabs + 1) + f"return self.{name}\n"
+        s += "\t"*(tabs + 1) + f"return self._{name}\n"
         s += "\n"
+        s += "\t"*tabs + f"@{name}.setter\n"
+        s += "\t"*(tabs) + f"def {name}(self, {name}) -> None:\n"
+        s += self.get_assertion_expression(tabs=tabs+1, property_key=name)
+        s += "\t"*(tabs + 1) + f"self._{name} = {name}\n"
+        s += "\n"
+        return s
+
+    def get_assertion_expression(self, tabs=2, property_key=None):
+        s = ""
+        s += "\t"*tabs + f"pass\n"
+        return s
+
+    def get___str__expression(self, tabs=1):
+        s = "\t"*tabs + "def __str__(self):\n"
+        s += "\t"*(tabs + 1) + "s = ''\n"
+        for key, schema_object in self.processed_properties.items():
+            s += "\t"*(tabs + 1) + f"s += '{key}:  '\n"
+            s += "\t"*(tabs + 1) + f"s += self.{key}.__str__() if (self.{key} is not None) else ''\n"
+            s += "\t"*(tabs + 1) + "s += '\\n'" + "\n"
+            # s += "\t"*(tabs + 1) + f"s += self.{key}.__str__()\n"
+        s += "\t"*(tabs + 1) + "return s"
         return s
