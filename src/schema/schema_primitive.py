@@ -8,11 +8,15 @@ class SchemaPrimitive:
         name=None,
         type_=None,
         enum=None,
+        minLength=None,
+        maxLength=None,
         ) -> None:
         self.name_mapping = {}
         self.type_ = type_
         self.name = name
         self.enum = enum
+        self.minLength = minLength
+        self.maxLength = maxLength
 
     @property
     def name(self):
@@ -31,6 +35,8 @@ class SchemaPrimitive:
         return SchemaPrimitive(
             name=self.name,
             type_=schema_data["type"],
+            minLength=schema_data.get("minLength", None),
+            maxLength=schema_data.get("maxLength", None),
             )
 
     def get_annotation_type(
@@ -53,10 +59,20 @@ class SchemaPrimitive:
         s += "\t"*(tabs) + f"def {self.name}(self) -> " + self.get_annotation_type(colons=False) + ":\n"
         s += "\t"*(tabs + 1) + f"return self.{self.name}\n"
         s += "\n"
+        s += "\t"*tabs + f"@{self.name}.setter\n"
+        s += "\t"*(tabs) + f"def {self.name}(self, {self.name}) -> None:\n"
+        s += self.get_assertion_expression(tabs=tabs+1)
+        s += "\t"*(tabs + 1) + f"self._{self.name} = {self.name}\n"
+        s += "\n"
         return s
 
-    def get_assertion_expression(self):
+    def get_assertion_expression(self, tabs=2):
         s = ""
+        if self.type_ == 'string':
+            if self.minLength is not None:
+                s += "\t"*tabs + f"assert len({self.name}) >= {self.minLength}\n"
+            if self.maxLength is not None:
+                s += "\t"*tabs + f"assert len({self.name}) <= {self.maxLength}\n"
         if self.enum:
-            s += f"assert self.{self.name} in {self.enum}"
+            s += "\t"*tabs + f"assert self.{self.name} in {self.enum}\n"
         return s
