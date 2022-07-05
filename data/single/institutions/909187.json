@@ -1,0 +1,56 @@
+{
+    "updated": "2021-06-26T01:18:44.167852+00:00",
+    "metadata": {
+        "addresses": [{
+            "cities": ["London"],
+            "latitude": 51.522895,
+            "longitude": -0.040833,
+            "postal_code": "E1 4NS",
+            "country_code": "GB",
+            "postal_address": ["Mile End Road", "London E1 4NS"],
+            "country": "United Kingdom"
+        }],
+        "number_of_papers": 345,
+        "ICN": ["Queen Mary U. London, Math. Sci."],
+        "core": true,
+        "self": {
+            "$ref": "https://inspirehep.net/api/institutions/909187"
+        },
+        "urls": [{
+            "value": "http://www.maths.qmw.ac.uk/"
+        }],
+        "$schema": "https://inspirehep.net/schemas/records/institutions.json",
+        "legacy_ICN": "Queen Mary, U. of London, Math. Sci.",
+        "extra_words": ["univ."],
+        "control_number": 909187,
+        "legacy_version": "20191024181950.0",
+        "related_records": [{
+            "record": {
+                "$ref": "https://inspirehep.net/api/institutions/1225383"
+            },
+            "relation": "parent",
+            "curated_relation": true
+        }],
+        "institution_type": ["University"],
+        "legacy_creation_date": "2003-07-16",
+        "institution_hierarchy": [{
+            "name": "School of Mathematical Sciences"
+        }, {
+            "name": "Queen Mary University of London"
+        }],
+        "external_system_identifiers": [{
+            "value": "grid.4868.2",
+            "schema": "GRID"
+        }, {
+            "value": "https://ror.org/026zzn846",
+            "schema": "ROR"
+        }, {
+            "value": "INST-78883",
+            "schema": "SPIRES"
+        }]
+    },
+    "id": "909187",
+    "revision_id": 112,
+    "created": "2003-07-16T00:00:00+00:00",
+    "uuid": "6afd94d4-4225-4c67-88e1-0feac1681557"
+}

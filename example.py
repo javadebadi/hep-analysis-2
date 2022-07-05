@@ -21,12 +21,21 @@ from generated_codes.authors import Authors
 AUTHORS_PATH = os.path.join(".", "data", "single", "authors")
 with open(os.path.join(AUTHORS_PATH, "1679997.json"), "r") as f:
     data = json.load(f)
-
 a = Authors()
-# print(a.new_record)
-# print(data["metadata"])
 a = a.set_from_dict(data["metadata"])
 print(a.name.preferred_name)
 print(a)
+
+from generated_codes.institution import Institution
+INSTITUTIONS_PATH = os.path.join(".", "data", "single", "institutions")
+with open(os.path.join(INSTITUTIONS_PATH, "909187.json"), "r") as f:
+    data = json.load(f)
+a = Institution()
+a = a.set_from_dict(data["metadata"])
+print(a)
+
+
+# print(a.new_record)
+# print(data["metadata"])
 # print(a.legacy_creation_date)
 
