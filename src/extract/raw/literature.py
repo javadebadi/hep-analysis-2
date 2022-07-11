@@ -26,6 +26,7 @@ def extract_raw_literature(resume=True):
                 for source_item in source_data:
                     metadata = source_item['metadata']
                     d = {}
+                    d['title'] = metadata.get('titles', [{"title": None}])[0]["title"]
                     d['control_number'] = metadata['control_number']
                     d['authors_ids'] = []
                     authors = metadata.get("authors", None)
