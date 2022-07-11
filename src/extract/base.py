@@ -27,3 +27,18 @@ def write_data_to_source(obj, filename, subdirectory_name):
 
 def write_date_to_source_literature(obj, filename):
     write_data_to_source(obj, filename, 'literature')
+
+def write_data_to_raw(obj, filename, subdirectory_name):
+    """Writes given json data to raw directory
+    """
+    makedirs()
+    with open(
+        os.path.join(
+            os.path.join(RAW_PATH, subdirectory_name),
+            filename),
+            'w'
+            ) as fp:
+        json.dump(obj, fp, sort_keys=True, indent=4)
+
+def write_date_to_raw_literature(obj, filename):
+    write_data_to_raw(obj, filename, 'literature')
