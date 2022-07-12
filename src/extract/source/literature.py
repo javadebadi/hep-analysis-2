@@ -1,6 +1,6 @@
 import os
 from pyinspirehep import Client
-from ..base import (
+from shared import (
     write_date_to_source_literature,
     SOURCE_LITERATURE_PATH,
     makedirs,

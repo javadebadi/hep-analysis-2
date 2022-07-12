@@ -4,14 +4,18 @@ import json
 DATA_PATH = os.path.join('data')
 SOURCE_PATH = os.path.join(DATA_PATH, 'source')
 RAW_PATH = os.path.join(DATA_PATH, 'raw')
+TRANSFORMED_PATH = os.path.join(DATA_PATH, 'transformed')
 SOURCE_LITERATURE_PATH = os.path.join(SOURCE_PATH, 'literature')
 RAW_LITERATURE_PATH = os.path.join(RAW_PATH, 'literature')
+TRANSFORMED_LITERATURE_PATH = os.path.join(TRANSFORMED_PATH, 'literature')
 
 def makedirs():
     os.makedirs(SOURCE_PATH, exist_ok=True)
     os.makedirs(RAW_PATH, exist_ok=True)
     os.makedirs(SOURCE_LITERATURE_PATH, exist_ok=True)
     os.makedirs(RAW_LITERATURE_PATH, exist_ok=True)
+    os.makedirs(TRANSFORMED_PATH, exist_ok=True)
+    os.makedirs(TRANSFORMED_LITERATURE_PATH, exist_ok=True)
 
 def write_data_to_source(obj, filename, subdirectory_name):
     """Writes given json data to source directory
