@@ -57,26 +57,26 @@ def transform_raw_data_literature_file(file):
             "has_authored": [l[2] for l in has_authored],
         }
         )
-    authors.to_csv(
+    authors.to_json(
         os.path.join(
             TRANSFORMED_LITERATURE_PATH,
-            'authors_'+str(file).replace('.json', '.csv')
+            'authors_'+str(file).replace('.json', '.json')
             ),
-            index=False,
+            orient='records',
             )
-    literature.to_csv(
+    literature.to_json(
         os.path.join(
             TRANSFORMED_LITERATURE_PATH,
-            'literature_'+str(file).replace('.json', '.csv')
+            'literature_'+str(file).replace('.json', '.json')
             ),
-            index=False,
+            orient='records',
             )
-    has_authored.to_csv(
+    has_authored.to_json(
         os.path.join(
             TRANSFORMED_LITERATURE_PATH,
-            'has_authored_'+str(file).replace('.json', '.csv')
+            'has_authored_'+str(file).replace('.json', '.json')
             ),
-            index=False,
+            orient='records',
             )
 
 def transform_raw_data_literature():
