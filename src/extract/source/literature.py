@@ -9,7 +9,7 @@ import logging
 
 client = Client()
 
-
+# TODO: future: this field: 'references.record' 
 def extract_source_literature_by_control_number(
     control_number_start,
     control_number_end,
@@ -18,7 +18,7 @@ def extract_source_literature_by_control_number(
     for page in range(1, 10000 // size + 1):
         try:
             literaute_data = client.search_literature(
-                    'authors.record','titles',
+                    'authors.record','authors.full_name','titles',
                     sorting='mostrecent',
                     size=size,
                     page=page,

@@ -29,20 +29,25 @@ def extract_raw_literature(resume=True):
                     d['title'] = metadata.get('titles', [{"title": None}])[0]["title"]
                     d['control_number'] = metadata['control_number']
                     d['authors_ids'] = []
+                    d['authors_names'] = []
                     authors = metadata.get("authors", None)
                     if authors:
-                        print(authors[0].keys())
                         records = [
                             author.get("record", None) 
                             for author
                             in authors
                         ]
-                        print(records)
-                        for record in records:
+                        authors_names = [
+                            author.get("full_name", "") 
+                            for author
+                            in authors
+                        ]
+                        for index, record in enumerate(records):
                             if record is not None:
                                 d['authors_ids'].append(record['$ref'].split("/")[-1])
-                            print(d['authors_ids'])
+                                d['authors_names'].append(authors_names[index])
                     else:
                         d['authors_ids'] = []
+                        d['authors_names'] = []
                     raw_data.append(d)
                 write_date_to_raw_literature(raw_data, file)

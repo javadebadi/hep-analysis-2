@@ -9,10 +9,10 @@ def main(
     min_control_number=1,
     max_control_number=10000,
 ):
-    # extract_source_literature(
-    #     size=size,
-    #     resume=resume,
-    #     min_control_number=min_control_number,
-    #     max_control_number=max_control_number,
-    #     )
+    extract_source_literature(
+        size=size,
+        resume=resume,
+        min_control_number=min_control_number,
+        max_control_number=max_control_number,
+        )
     extract_raw_literature()
