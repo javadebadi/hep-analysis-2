@@ -30,8 +30,9 @@ def transform_raw_data_literature_file(file):
     for item in data:
         literature_control_number = item["control_number"]
         new_authors = item["authors_ids"]
+        new_authors_names = item["authors_names"]
         # example: new_authors = ["65646", "664349"]
-        [authors.add(a) for a in new_authors]
+        [authors.add(a) for a in zip(new_authors, new_authors_names)]
         new_literature = (
             literature_control_number,
             item["title"],
@@ -43,7 +44,12 @@ def transform_raw_data_literature_file(file):
                 (new_author, literature_control_number, 'has_authored')
             )
 
-    authors = pd.DataFrame({"author_id": list(authors)})
+    authors = pd.DataFrame(
+        {
+            "author_id": [l[0] for l in authors],
+            "title": [l[1] for l in authors],
+        }
+        )
     literature = pd.DataFrame(
         {
             "control_number": [l[0] for l in literature],
