@@ -39,7 +39,16 @@ def load_authors_from_file(file):
     data_list = read_transformed_authors(file)
     if not data_list:
         return None
-    lines = ["MERGE (a" + str(number) + ":Author {author_id:'" + item["author_id"] + "'})" for number, item in enumerate(data_list)]
+    lines = []
+    for number, item in enumerate(data_list):
+        line = "MERGE (a" + str(number) + ":Author {author_id:'"
+        line += item["author_id"] + "'})"
+        if item["title"]:
+            line += 'SET a' +  str(number) + '.title = "' +  r"{}".format(item["title"]).replace("\n","").replace("\"","'") +  '"'
+        else:
+            line += 'SET a' +  str(number) + '.title = NULL'
+        lines.append(line)
+    
     with DRIVER.session() as session:
         for line in lines:
             cquery = line
