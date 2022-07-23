@@ -15,6 +15,7 @@ def extract_source_literature_by_control_number(
     control_number_end,
     size=10,
     ):
+    print(f"[EXTRACT:SOURCE] {control_number_start} - {control_number_end} - size = {size}")
     for page in range(1, 10000 // size + 1):
         try:
             literaute_data = client.search_literature(
@@ -46,10 +47,10 @@ def extract_source_literature(
         makedirs()
         files = os.listdir(SOURCE_LITERATURE_PATH)
         if files:
-            head_control_number = int(max(
-                item.split('_')[0] for item
+            head_control_number = max(
+                int(item.split('_')[0]) for item
                 in files
-            ))
+            )
         else:
             head_control_number = min_control_number
         extract_source_literature(
