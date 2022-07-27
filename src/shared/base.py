@@ -59,3 +59,9 @@ def archive_source_literature_file(filename):
         os.path.join(SOURCE_LITERATURE_PATH, filename),
         os.path.join(SOURCE_LITERATURE_ARCHIVED_PATH, filename),
         )
+
+def get_list_of_files_in_directory(directory_path):
+    return [
+        item for item in os.listdir(directory_path)
+        if os.path.isfile(directory_path, item)
+        ]
