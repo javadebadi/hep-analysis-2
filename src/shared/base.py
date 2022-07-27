@@ -61,7 +61,7 @@ def archive_source_literature_file(filename):
         )
 
 def get_list_of_files_in_directory(directory_path):
-    return [
+    return sorted(
         item for item in os.listdir(directory_path)
-        if os.path.isfile(directory_path, item)
-        ]
+        if os.path.isfile(os.path.join(directory_path, item))
+    )
