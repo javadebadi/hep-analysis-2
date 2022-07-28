@@ -2,6 +2,8 @@ import os
 import shutil
 import json
 
+from charset_normalizer import logging
+
 DATA_PATH = os.path.join('data')
 SOURCE_PATH = os.path.join(DATA_PATH, 'source')
 RAW_PATH = os.path.join(DATA_PATH, 'raw')
@@ -55,9 +57,17 @@ def write_date_to_raw_literature(obj, filename):
     write_data_to_raw(obj, filename, 'literature')
 
 def archive_source_literature_file(filename):
+    logging.debug(f"[ARCHIVING] Source Literature: {filename}")
     shutil.move(
         os.path.join(SOURCE_LITERATURE_PATH, filename),
         os.path.join(SOURCE_LITERATURE_ARCHIVED_PATH, filename),
+        )
+
+def archive_raw_literature_file(filename):
+    logging.debug(f"[ARCHIVING] Raw Literature: {filename}")
+    shutil.move(
+        os.path.join(RAW_LITERATURE_PATH, filename),
+        os.path.join(RAW_LITERATURE_ARCHIVED_PATH, filename),
         )
 
 def get_list_of_files_in_directory(directory_path):
