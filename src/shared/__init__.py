@@ -15,6 +15,7 @@ from .base import (
     write_data_to_raw,
     write_date_to_raw_literature,
     archive_source_literature_file,
+    archive_transformed_literature_file,
     archive_raw_literature_file,
     get_list_of_files_in_directory,
 )

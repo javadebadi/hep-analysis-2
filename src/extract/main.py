@@ -7,7 +7,7 @@ def main(
     size=1000,
     resume=True,
     min_control_number=1,
-    max_control_number=10000,
+    max_control_number=1000000, # 1M
 ):
     extract_source_literature(
         size=size,

@@ -11,6 +11,8 @@ from shared import (
     RAW_LITERATURE_PATH,
     TRANSFORMED_LITERATURE_PATH,
     makedirs,
+    archive_raw_literature_file,
+    get_list_of_files_in_directory,
 )
 
 def read_raw_data_literature_file(filename):
@@ -84,9 +86,11 @@ def transform_raw_data_literature_file(file):
             ),
             orient='records',
             )
+    # archive file after done with it
+    archive_raw_literature_file(file)
 
 def transform_raw_data_literature():
-    files = os.listdir(RAW_LITERATURE_PATH)
+    files = get_list_of_files_in_directory(RAW_LITERATURE_PATH)
     if files:
         for file in files:
             transform_raw_data_literature_file(file)

@@ -4,6 +4,8 @@ from charset_normalizer import logging
 import pandas as pd
 from shared import (
     TRANSFORMED_LITERATURE_PATH,
+    archive_transformed_literature_file,
+    get_list_of_files_in_directory,
 )
 import logging
 from .utils import create_node_index
@@ -53,6 +55,8 @@ def load_authors_from_file(file):
         for line in lines:
             cquery = line
             results = session.run(cquery)
+    # archive the transformed file after done with it
+    archive_transformed_literature_file(file)
 
 def load_literature_from_file(file):
     data_list = read_transfomred_literature(file)
@@ -74,6 +78,9 @@ def load_literature_from_file(file):
             print("<<<--------------------------")
             results = session.run(cqeury)
             print("-------------------------->>>>")
+
+    # archive the transformed file after done with it
+    archive_transformed_literature_file(file)
 
 def load_has_authored_from_file(file):
     data_list = read_transfomred_has_authored(file)
@@ -98,13 +105,16 @@ def load_has_authored_from_file(file):
             results = session.run(cqeury)
             print("-[]->             >>>>")
 
+    # archive the transformed file after done with it
+    archive_transformed_literature_file(file)
+
     
 def load_authors():
     # create index on a node
     node = 'Author'  # Label of the node
     create_node_index(node, 'author_id')
 
-    for file in os.listdir(TRANSFORMED_LITERATURE_PATH):
+    for file in get_list_of_files_in_directory(TRANSFORMED_LITERATURE_PATH):
         load_authors_from_file(
             file,
             )
@@ -114,7 +124,7 @@ def load_literature():
     node = 'Literature'  # Label of the node
     create_node_index(node, 'control_number')
 
-    for file in os.listdir(TRANSFORMED_LITERATURE_PATH):
+    for file in get_list_of_files_in_directory(TRANSFORMED_LITERATURE_PATH):
         load_literature_from_file(file)
     
 def load_has_authored():
@@ -122,5 +132,5 @@ def load_has_authored():
     node = 'Literature'  # Label of the node
     create_node_index(node, 'control_number')
 
-    for file in os.listdir(TRANSFORMED_LITERATURE_PATH):
+    for file in get_list_of_files_in_directory(TRANSFORMED_LITERATURE_PATH):
         load_has_authored_from_file(file)

@@ -4,15 +4,17 @@ from shared import (
     SOURCE_LITERATURE_PATH,
     RAW_LITERATURE_PATH,
     write_date_to_raw_literature,
+    archive_source_literature_file,
     makedirs,
+    get_list_of_files_in_directory,
     )
 import logging
 
 
 def extract_raw_literature(resume=True):
     makedirs()
-    raw_files = os.listdir(RAW_LITERATURE_PATH)
-    source_files = os.listdir(SOURCE_LITERATURE_PATH)
+    raw_files = get_list_of_files_in_directory(RAW_LITERATURE_PATH)
+    source_files = get_list_of_files_in_directory(SOURCE_LITERATURE_PATH)
     print(source_files)
     print(raw_files)
     for file in source_files:
@@ -51,3 +53,5 @@ def extract_raw_literature(resume=True):
                         d['authors_names'] = []
                     raw_data.append(d)
                 write_date_to_raw_literature(raw_data, file)
+            # archive the source file after done with it
+            archive_source_literature_file(file)
