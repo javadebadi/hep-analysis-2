@@ -68,6 +68,8 @@ def load_literature_from_file(file):
         s += str(item["control_number"]) + "})\n"
         if item["control_number"]:
             s += 'SET a' +  str(number) + '.title = "' +  r"{}".format(item["title"]).replace("\n","").replace("\"","'") +  '"'
+            # clean the unicode character
+            s = s.replace(r"\u", "BACKSLASHu")
         else:
             s += 'SET a' +  str(number) + '.title = NULL'
         if s.strip() != "":
