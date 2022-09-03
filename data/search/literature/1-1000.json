@@ -1,0 +1,2861 @@
+{
+    "hits": {
+        "hits": [{
+            "links": {
+                "bibtex": "https://inspirehep.net/api/literature/7976?format=bibtex",
+                "latex-eu": "https://inspirehep.net/api/literature/7976?format=latex-eu",
+                "latex-us": "https://inspirehep.net/api/literature/7976?format=latex-us",
+                "json": "https://inspirehep.net/api/literature/7976?format=json",
+                "cv": "https://inspirehep.net/api/literature/7976?format=cv",
+                "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A7976"
+            },
+            "metadata": {
+                "authors": [{
+                    "first_name": "Alan",
+                    "ids": [{
+                        "value": "A.Chodos.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "last_name": "Chodos",
+                    "signature_block": "CADa",
+                    "full_name": "Chodos, Alan",
+                    "affiliations": [{
+                        "value": "Yale U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903357"
+                        }
+                    }],
+                    "full_name_unicode_normalized": "chodos, alan",
+                    "recid": 1013652,
+                    "uuid": "c5343b3a-a42d-46dc-803a-7712004c9786",
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1013652"
+                    },
+                    "bai": "A.Chodos.1"
+                }, {
+                    "first_name": "Steven L.",
+                    "ids": [{
+                        "value": "S.L.Detweiler.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "last_name": "Detweiler",
+                    "curated_relation": true,
+                    "signature_block": "DATWALARs",
+                    "full_name": "Detweiler, Steven L.",
+                    "affiliations": [{
+                        "value": "Yale U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903357"
+                        }
+                    }],
+                    "full_name_unicode_normalized": "detweiler, steven l.",
+                    "recid": 1011928,
+                    "uuid": "9bdda342-ba76-4313-af7e-f9918ddaaa97",
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1011928"
+                    },
+                    "bai": "S.L.Detweiler.1"
+                }],
+                "citation_count_without_self_citations": 467,
+                "citation_count": 473,
+                "publication_info": [{
+                    "year": 1980,
+                    "artid": "2167",
+                    "page_start": "2167",
+                    "journal_title": "Phys.Rev.D",
+                    "journal_volume": "21"
+                }, {
+                    "pubinfo_freetext": "IN *APPELQUIST, T. (ED.) ET AL.: MODERN KALUZA-KLEIN THEORIES*, 296-299. (PHYS. REV. D21 (1980) 2167-2170) AND PREPRINT - CHODOS, A. (REC.NOV.79) 11 P. (SEE BOOK INDEX)"
+                }],
+                "report_numbers": [{
+                    "value": "Print-79-0486(YALE)"
+                }],
+                "journal_title_variants": ["Phys. Rev. D", "Phys.Rev.D"],
+                "abstracts": [{
+                    "value": "We show that a simple solution to the vacuum field equations of general relativity in 4 + 1 space-time dimensions leads to a cosmology which at the present epoch has 3 + 1 observable dimensions in which the Einstein-Maxwell equations are obeyed. The large ratio of the electromagnetic to gravitational forces is a consequence of the age of the Universe, in agreement with Dirac's large-number hypothesis.",
+                    "abstract_source_suggest": {
+                        "input": "APS"
+                    },
+                    "source": "APS"
+                }],
+                "author_count": 2,
+                "referenced_authors_bais": ["Albert.Einstein.1", "E.Cremmer.1", "J.Scherk.1", "O.Klein.1", "P.A.M.Dirac.1", "P.G.Bergmann.1"],
+                "earliest_date": "1979-06",
+                "facet_author_name": ["1013652_Alan Chodos", "1011928_Steven L. Detweiler"],
+                "first_author": {
+                    "first_name": "Alan",
+                    "ids": [{
+                        "value": "A.Chodos.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "last_name": "Chodos",
+                    "full_name": "Chodos, Alan",
+                    "recid": 1013652
+                },
+                "core": true,
+                "dois": [{
+                    "value": "10.1103/PhysRevD.21.2167"
+                }],
+                "titles": [{
+                    "title": "Where Has the Fifth-Dimension Gone?"
+                }, {
+                    "title": "FIFTH DIMENSION"
+                }],
+                "$schema": "https://inspirehep.net/schemas/records/hep.json",
+                "curated": true,
+                "texkeys": ["Chodos:1979vk"],
+                "citeable": true,
+                "keywords": [{
+                    "value": "general relativity",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FIELD THEORY: FIVE-DIMENSIONAL",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "UNIFIED FIELD THEORY",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "GRAVITATION: FORCE",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "ELECTROMAGNETIC FIELD",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FORCE: ELECTROMAGNETIC",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FORCE: RATIO",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "Einstein equation",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "Einstein-Maxwell equation",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "COSMOLOGICAL CONSTANT",
+                    "schema": "INSPIRE"
+                }],
+                "refereed": true,
+                "references": [
+                    {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "875",
+                            "page_start": "875",
+                            "journal_title": "Z.Phys.",
+                            "journal_volume": "37"
+                        }
+                    }
+                },
+                {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/24991"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "516",
+                            "page_start": "516",
+                            "journal_title": "Nature",
+                            "journal_volume": "118"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/24992"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "683",
+                            "page_start": "683",
+                            "journal_title": "Annals Math.",
+                            "journal_volume": "39"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "255",
+                            "page_start": "255",
+                            "journal_title": "Annals Math.",
+                            "journal_volume": "49"
+                        }
+                    }
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "275",
+                            "page_start": "275",
+                            "journal_title": "J.Math.Pure.Appl.",
+                            "journal_volume": "30"
+                        }
+                    }
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "565",
+                            "page_start": "565",
+                            "journal_title": "Nuovo Cim.",
+                            "journal_volume": "30"
+                        }
+                    }
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "256",
+                            "page_start": "256",
+                            "journal_title": "Acta Phys.Austriaca",
+                            "journal_volume": "9"
+                        }
+                    }
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "217",
+                            "page_start": "217",
+                            "journal_title": "Am.J.Math.",
+                            "journal_volume": "48"
+                        }
+                    }
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/100220"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "399",
+                            "page_start": "399",
+                            "journal_title": "Nucl.Phys.B",
+                            "journal_volume": "103"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/145279"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "19",
+                            "page_start": "19",
+                            "journal_title": "Proc.Roy.Soc.Lond.A",
+                            "journal_volume": "365"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/1227"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "199",
+                            "page_start": "199",
+                            "journal_title": "Proc.Roy.Soc.Lond.A",
+                            "journal_volume": "165"
+                        }
+                    },
+                    "curated_relation": false
+                }],
+                "document_type": ["article"],
+                "preprint_date": "1979-06",
+                "control_number": 7976,
+                "legacy_version": "20170323002852.0",
+                "number_of_pages": 12,
+                "inspire_categories": [{
+                    "term": "Theory-HEP",
+                    "source": "curator"
+                }, {
+                    "term": "Gravitation and Cosmology",
+                    "source": "curator"
+                }],
+                "legacy_creation_date": "1979-06-01",
+                "external_system_identifiers": [{
+                    "value": "5461353",
+                    "schema": "OSTI"
+                }, {
+                    "value": "1980PhRvD..21.2167C",
+                    "schema": "ADS"
+                }, {
+                    "value": "SPIRES-361798",
+                    "schema": "SPIRES"
+                }]
+            },
+            "id": "7976",
+            "updated": "2021-09-16T14:18:36.758575+00:00",
+            "created": "1979-06-01T00:00:00+00:00"
+        }, {
+            "links": {
+                "bibtex": "https://inspirehep.net/api/literature/2307?format=bibtex",
+                "latex-eu": "https://inspirehep.net/api/literature/2307?format=latex-eu",
+                "latex-us": "https://inspirehep.net/api/literature/2307?format=latex-us",
+                "json": "https://inspirehep.net/api/literature/2307?format=json",
+                "cv": "https://inspirehep.net/api/literature/2307?format=cv",
+                "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2307"
+            },
+            "metadata": {
+                "authors": [{
+                    "uuid": "c8997b2c-3a1e-4d78-984a-5b2221105e42",
+                    "full_name_unicode_normalized": "callan, curtis g., jr.",
+                    "affiliations": [{
+                        "value": "Princeton U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903139"
+                        }
+                    }],
+                    "signature_block": "CALANc",
+                    "first_name": "Curtis G., Jr.",
+                    "full_name": "Callan, Curtis G., Jr.",
+                    "raw_affiliations": [{
+                        "value": "Joseph Henry Laboratories, Princeton University, Princeton, New Jersey 08540 USA"
+                    }],
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1014725"
+                    },
+                    "recid": 1014725,
+                    "last_name": "Callan",
+                    "bai": "C.G.Callan.1",
+                    "ids": [{
+                        "value": "C.G.Callan.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "curated_relation": true
+                }, {
+                    "uuid": "00bee4b0-51c1-4b19-a3dd-8f774c7ed53c",
+                    "full_name_unicode_normalized": "gross, david j.",
+                    "affiliations": [{
+                        "value": "Princeton U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903139"
+                        }
+                    }],
+                    "signature_block": "GRd",
+                    "first_name": "David J.",
+                    "full_name": "Gross, David J.",
+                    "raw_affiliations": [{
+                        "value": "Joseph Henry Laboratories, Princeton University, Princeton, New Jersey 08540 USA"
+                    }],
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1007454"
+                    },
+                    "recid": 1007454,
+                    "last_name": "Gross",
+                    "bai": "David.J.Gross.1",
+                    "ids": [{
+                        "value": "INSPIRE-00300951",
+                        "schema": "INSPIRE ID"
+                    }, {
+                        "value": "David.J.Gross.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "curated_relation": true
+                }],
+                "citation_count_without_self_citations": 135,
+                "citation_count": 136,
+                "publication_info": [{
+                    "year": 1975,
+                    "page_end": "55",
+                    "page_start": "29",
+                    "journal_title": "Nucl.Phys.B",
+                    "journal_volume": "93"
+                }],
+                "report_numbers": [{
+                    "value": "Print-75-0309 (PRINCETON)"
+                }],
+                "journal_title_variants": ["Nucl. Phys. B", "Nucl.Phys.B"],
+                "first_author": {
+                    "first_name": "Curtis G., Jr.",
+                    "full_name": "Callan, Curtis G., Jr.",
+                    "recid": 1014725,
+                    "last_name": "Callan",
+                    "ids": [{
+                        "value": "C.G.Callan.1",
+                        "schema": "INSPIRE BAI"
+                    }]
+                },
+                "facet_author_name": ["1007454_David Jonathan Gross", "1014725_Curtis G. Callan"],
+                "abstracts": [{
+                    "abstract_source_suggest": {
+                        "input": "Elsevier"
+                    },
+                    "source": "Elsevier",
+                    "value": "We develop a systematic perturbation theory for amplitudes involving a single soliton (extended finite energy solution of a classical field theory). These methods allow one in principle to compute to any desired order quantum corrections to soliton masses, form factors and Green functions. The major technical problem encountered is an infrared divergence of the naive perturbation theory rules. This divergence is dominated by a modification of the usual functional methods so as to properly define the soliton as a momentum eigenstate. The extension of these methods to soliton-soliton scattering is discussed."
+                }],
+                "referenced_authors_bais": ["A.C.Scott.1", "A.Neveu.1", "B.Hasslacher.1", "D.Finkelstein.1", "D.W.Mclaughlin.2", "F.Y.F.Chu.1", "G.Frye.2", "G.tHooft.1", "H.B.Nielsen.1", "L.Susskind.1", "P.Olesen.1", "R.F.Dashen.1"],
+                "author_count": 2,
+                "earliest_date": "1975-04",
+                "core": true,
+                "dois": [{
+                    "value": "10.1016/0550-3213(75)90150-9"
+                }],
+                "titles": [{
+                    "title": "Quantum Perturbation Theory of Solitons"
+                }],
+                "$schema": "https://inspirehep.net/schemas/records/hep.json",
+                "curated": true,
+                "texkeys": ["Callan:1975yy"],
+                "citeable": true,
+                "imprints": [{
+                    "date": "1975"
+                }],
+                "keywords": [{
+                    "value": "PERTURBATION THEORY",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "MODEL: FIELD THEORY",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "MODEL: SOLITON",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "CORRECTION: MASS",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "MASS: CORRECTION",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "CORRECTION: FORM FACTOR",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FORM FACTOR: CORRECTION",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FIELD THEORY: INFRARED PROBLEM",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FIELD THEORY: EFFECTIVE LAGRANGIANS",
+                    "schema": "INSPIRE"
+                }],
+                "refereed": true,
+                "copyright": [{
+                    "statement": "Copyright @ unknown. Published by Elsevier B.V."
+                }],
+                "references": [{
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/81230"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "45",
+                            "page_start": "45",
+                            "journal_title": "Nucl.Phys.B",
+                            "journal_volume": "61"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/89705"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "276",
+                            "page_start": "276",
+                            "journal_title": "Nucl.Phys.B",
+                            "journal_volume": "79"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/90646"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "4138",
+                            "page_start": "4138",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "10"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/95441"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "2231",
+                            "page_start": "2231",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "9"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/90645"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "4130",
+                            "page_start": "4130",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "10"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/90644"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "4114",
+                            "page_start": "4114",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "10"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/80972"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1443",
+                            "page_start": "1443",
+                            "journal_title": "IEEE Proc.",
+                            "journal_volume": "61"
+                        }
+                    },
+                    "curated_relation": false
+                }],
+                "document_type": ["article"],
+                "preprint_date": "1975-04",
+                "control_number": 2307,
+                "legacy_version": "20160616175835.0",
+                "number_of_pages": 27,
+                "inspire_categories": [{
+                    "term": "Theory-HEP",
+                    "source": "curator"
+                }],
+                "legacy_creation_date": "1975-04-01",
+                "external_system_identifiers": [{
+                    "value": "SPIRES-74632",
+                    "schema": "SPIRES"
+                }]
+            },
+            "id": "2307",
+            "updated": "2021-06-26T09:36:39.731266+00:00",
+            "created": "1975-04-01T00:00:00+00:00"
+        }, {
+            "links": {
+                "bibtex": "https://inspirehep.net/api/literature/8975?format=bibtex",
+                "latex-eu": "https://inspirehep.net/api/literature/8975?format=latex-eu",
+                "latex-us": "https://inspirehep.net/api/literature/8975?format=latex-us",
+                "json": "https://inspirehep.net/api/literature/8975?format=json",
+                "cv": "https://inspirehep.net/api/literature/8975?format=cv",
+                "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A8975"
+            },
+            "metadata": {
+                "authors": [{
+                    "last_name": "Longhitano",
+                    "ids": [{
+                        "value": "A.C.Longhitano.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "signature_block": "LANGATANa",
+                    "bai": "A.C.Longhitano.1",
+                    "affiliations": [{
+                        "value": "Yale U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903357"
+                        }
+                    }],
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/999856"
+                    },
+                    "full_name": "Longhitano, Anthony C.",
+                    "uuid": "49b12a70-f7cd-44be-b20a-0e433b16724e",
+                    "recid": 999856,
+                    "full_name_unicode_normalized": "longhitano, anthony c.",
+                    "first_name": "Anthony C."
+                }],
+                "citation_count_without_self_citations": 544,
+                "citation_count": 547,
+                "publication_info": [{
+                    "year": 1980,
+                    "artid": "1166",
+                    "page_start": "1166",
+                    "journal_title": "Phys.Rev.D",
+                    "journal_volume": "22"
+                }],
+                "report_numbers": [{
+                    "value": "YTP-80-04"
+                }],
+                "facet_author_name": ["999856_Anthony Carmine Longhitano"],
+                "journal_title_variants": ["Phys. Rev. D", "Phys.Rev.D"],
+                "first_author": {
+                    "last_name": "Longhitano",
+                    "ids": [{
+                        "value": "A.C.Longhitano.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name": "Longhitano, Anthony C.",
+                    "recid": 999856,
+                    "first_name": "Anthony C."
+                },
+                "referenced_authors_bais": ["Abdus.Salam.1", "A.Gonidec.1", "B.W.Lee.1", "C.C.Young.1", "C.K.Sinclair.1", "C.Quigg.1", "C.Y.Prescott.1", "D.J.Sherden.1", "E.L.Garwin.1", "Gordon.L.Kane.1", "H.B.Thacker.1", "H.C.DeStaebler.1", "H.E.Haber.1", "J.E.Clendenin.1", "K.I.Shizuya.1", "K.Lubelsmeyer.1", "K.P.Schuler.1", "L.L.Cottrell.1", "L.S.Rochester.1", "L.Susskind.1", "M.Borghini.1", "M.J.G.Veltman.1", "N.Sasao.1", "R.E.Taylor.1", "Roger.H.Miller.1", "R.Shankar.1", "S.Dimopoulos.1", "S.Stein.2", "Steven.Weinberg.1", "T.Appelquist.1", "T.Sato.12", "V.W.Hughes.1", "W.A.Bardeen.1", "W.B.Atwood.1", "W.Jentschke.1", "W.J.Marciano.1"],
+                "abstracts": [{
+                    "source": "APS",
+                    "value": "We search for a systematic way to characterize the low-energy sensitivity of the minimal Weinberg-Salam model to a heavy-Higgs-boson sector. We find that it is convenient to view this theory as the regulated version of a nonlinear σ model coupled to an SU(2)L×U(1) Yang-Mills theory. Within this framework, MH acts as the regulator. Using the symmetry properties of the nonlinear theory, along with a power-counting analysis, we are able to classify low-energy observables according to their sensitivity to MH. We find that, at one loop, the greatest sensitivity is logarithmic. An illustration of these ideas is provided by a calculation of the one-loop, MH-dependent corrections to the natural relation MWMZ cosθ=1. Finally, we discuss other possible applications of this technique.",
+                    "abstract_source_suggest": {
+                        "input": "APS"
+                    }
+                }],
+                "earliest_date": "1980-03",
+                "author_count": 1,
+                "core": true,
+                "dois": [{
+                    "value": "10.1103/PhysRevD.22.1166"
+                }],
+                "titles": [{
+                    "title": "Heavy Higgs Bosons in the Weinberg-Salam Model"
+                }],
+                "$schema": "https://inspirehep.net/schemas/records/hep.json",
+                "curated": true,
+                "texkeys": ["Longhitano:1980iz"],
+                "citeable": true,
+                "keywords": [{
+                    "value": "GAUGE FIELD THEORY: SU(2) X U(1)",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FIELD THEORETICAL MODEL: WEINBERG",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "POSTULATED PARTICLE: HIGGS PARTICLE",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FIELD THEORETICAL MODEL: SIGMA",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FIELD EQUATIONS: NONLINEAR",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "MASS FORMULA",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "PERTURBATION THEORY: HIGHER-ORDER",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "APPROXIMATION: BORN",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "APPROXIMATION: TREE",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FIELD THEORY: GOLDSTONE THEOREM",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "POSTULATED PARTICLE: W+",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "POSTULATED PARTICLE: W-",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "POSTULATED PARTICLE: Z0",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "WEAK INTERACTION: WEINBERG ANGLE",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "WEINBERG ANGLE: WEAK INTERACTION",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "RENORMALIZATION: REGULARIZATION",
+                    "schema": "INSPIRE"
+                }],
+                "refereed": true,
+                "references": [{
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/7520"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "274",
+                            "page_start": "274",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "20"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/51188"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1264",
+                            "page_start": "1264",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "19"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/53083"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "367",
+                            "page_start": "367",
+                            "journal_title": "Conf.Proc.C",
+                            "journal_volume": "680519"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/130569"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "347",
+                            "page_start": "347",
+                            "journal_title": "Phys.Lett.B",
+                            "journal_volume": "77"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/140940"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "524",
+                            "page_start": "524",
+                            "journal_title": "Phys.Lett.B",
+                            "journal_volume": "84"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/110700"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "475",
+                            "page_start": "475",
+                            "journal_title": "Acta Phys.Polon.B",
+                            "journal_volume": "8"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/130473"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "2619",
+                            "page_start": "2619",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "20"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/140094"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "237",
+                            "page_start": "237",
+                            "journal_title": "Nucl.Phys.B",
+                            "journal_volume": "155"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/2724"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1277",
+                            "page_start": "1277",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "19"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/7690"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "317",
+                            "page_start": "317",
+                            "journal_title": "Nucl.Phys.B",
+                            "journal_volume": "158"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/130055"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "525",
+                            "page_start": "525",
+                            "journal_title": "Nucl.Phys.B",
+                            "journal_volume": "144"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/119348"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1519",
+                            "page_start": "1519",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "16"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/118829"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "883",
+                            "page_start": "883",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "38"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/125966"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "253",
+                            "page_start": "253",
+                            "journal_title": "Phys.Lett.B",
+                            "journal_volume": "70"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/130043"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1969",
+                            "page_start": "1969",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "18"
+                        }
+                    },
+                    "curated_relation": false
+                }],
+                "document_type": ["article"],
+                "preprint_date": "1980-03",
+                "control_number": 8975,
+                "legacy_version": "20170608155844.0",
+                "number_of_pages": 35,
+                "inspire_categories": [{
+                    "term": "Theory-HEP",
+                    "source": "curator"
+                }],
+                "legacy_creation_date": "1980-03-01",
+                "external_system_identifiers": [{
+                    "value": "5017610",
+                    "schema": "OSTI"
+                }, {
+                    "value": "1980PhRvD..22.1166L",
+                    "schema": "ADS"
+                }, {
+                    "value": "SPIRES-606960",
+                    "schema": "SPIRES"
+                }]
+            },
+            "id": "8975",
+            "updated": "2021-06-26T09:27:37.195940+00:00",
+            "created": "1980-03-01T00:00:00+00:00"
+        }, {
+            "links": {
+                "bibtex": "https://inspirehep.net/api/literature/658?format=bibtex",
+                "latex-eu": "https://inspirehep.net/api/literature/658?format=latex-eu",
+                "latex-us": "https://inspirehep.net/api/literature/658?format=latex-us",
+                "json": "https://inspirehep.net/api/literature/658?format=json",
+                "cv": "https://inspirehep.net/api/literature/658?format=cv",
+                "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A658"
+            },
+            "metadata": {
+                "authors": [{
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1000730"
+                    },
+                    "uuid": "59876eff-06a7-428d-ae9b-891ede287ca9",
+                    "recid": 1000730,
+                    "first_name": "T.D.",
+                    "last_name": "Lee",
+                    "curated_relation": true,
+                    "ids": [{
+                        "value": "T.D.Lee.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "bai": "T.D.Lee.1",
+                    "full_name_unicode_normalized": "lee, t.d.",
+                    "affiliations": [{
+                        "value": "Columbia U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902749"
+                        }
+                    }],
+                    "signature_block": "LYt",
+                    "full_name": "Lee, T.D."
+                }, {
+                    "uuid": "69401c17-7d8e-4009-8837-dbac5bae3ed6",
+                    "first_name": "G.C.",
+                    "last_name": "Wick",
+                    "ids": [{
+                        "value": "G.C.Wick.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "bai": "G.C.Wick.1",
+                    "full_name_unicode_normalized": "wick, g.c.",
+                    "affiliations": [{
+                        "value": "Columbia U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902749"
+                        }
+                    }],
+                    "signature_block": "WACg",
+                    "full_name": "Wick, G.C."
+                }],
+                "citation_count_without_self_citations": 751,
+                "citation_count": 773,
+                "publication_info": [{
+                    "year": 1974,
+                    "page_end": "2316",
+                    "page_start": "2291",
+                    "journal_title": "Phys.Rev.D",
+                    "journal_volume": "9"
+                }],
+                "report_numbers": [{
+                    "value": "CO-2271-20"
+                }],
+                "first_author": {
+                    "recid": 1000730,
+                    "first_name": "T.D.",
+                    "last_name": "Lee",
+                    "ids": [{
+                        "value": "T.D.Lee.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name": "Lee, T.D."
+                },
+                "abstracts": [{
+                    "abstract_source_suggest": {
+                        "input": "APS"
+                    },
+                    "value": "The theoretical possibility that in a limited domain in space the expectation value 〈φ(x)〉 of a neutral spin-0 field may be abnormal (that is to say quite different from its normal vacuum expectation value) is investigated. It is shown that if the φ3 coupling is sufficiently large, then such a configuration can be metastable, and its physical size may become substantially greater than the usual microscopic dimension in particle physics. Furthermore, independent of the strength of the φ3 coupling, if φ(x) has sufficiently strong scalar interaction with the nucleon field, the state that has an abnormal 〈φ(x)〉 inside a very heavy nucleus can become the minimum-energy state, at least within the tree approximation; in such a state, the \"effective\" nucleon mass inside the nucleus may be much lower than the normal value. Both possibilities may lead to physical systems that have not yet been observed.",
+                    "source": "APS"
+                }],
+                "referenced_authors_bais": ["Abdus.Salam.1", "B.W.Lee.1", "C.N.Yang.1", "E.J.Weinberg.1", "F.J.Dyson.1", "J.Goldstone.1", "J.S.Schwinger.1", "K.Symanzik.1", "M.Ruderman.1", "Peter.W.Higgs.1", "R.J.Finkelstein.1", "R.LeLevier.1", "Sidney.R.Coleman.1", "Steven.Weinberg.1", "T.D.Lee.1", "Yoichiro.Nambu.1"],
+                "journal_title_variants": ["Phys.Rev.D", "Phys. Rev. D"],
+                "earliest_date": "1974-01",
+                "author_count": 2,
+                "facet_author_name": ["1000730_Tsung-Dao Lee", "NOREC_G.C. Wick"],
+                "core": true,
+                "dois": [{
+                    "value": "10.1103/PhysRevD.9.2291"
+                }],
+                "titles": [{
+                    "title": "Vacuum Stability and Vacuum Excitation in a Spin 0 Field Theory"
+                }],
+                "$schema": "https://inspirehep.net/schemas/records/hep.json",
+                "curated": true,
+                "texkeys": ["Lee:1974ma"],
+                "citeable": true,
+                "keywords": [{
+                    "value": "field theory: scalar",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "field theory: vacuum state",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "stability",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "spontaneous symmetry breaking",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "perturbation theory: higher-order",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "renormalization: regularization",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "energy: density",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "field equations: solution",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "symmetry: rotation",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "hadron: model",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "model: gas",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "model: fluid",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "field theoretical model: sigma",
+                    "schema": "INSPIRE"
+                }],
+                "refereed": true,
+                "references": [{
+                    "reference": {
+                        "publication_info": {
+                            "artid": "155",
+                            "page_start": "155",
+                            "journal_title": "Nuovo Cim.",
+                            "journal_volume": "19"
+                        }
+                    }
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/12290"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "965",
+                            "page_start": "965",
+                            "journal_title": "Phys.Rev.",
+                            "journal_volume": "127"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/40440"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "132",
+                            "page_start": "132",
+                            "journal_title": "Phys.Lett.",
+                            "journal_volume": "12"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/11883"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "508",
+                            "page_start": "508",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "13"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/50073"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1156",
+                            "page_start": "1156",
+                            "journal_title": "Phys.Rev.",
+                            "journal_volume": "145"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/9389"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "404",
+                            "page_start": "404",
+                            "journal_title": "Phys.Rev.",
+                            "journal_volume": "87"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "417",
+                            "page_start": "417",
+                            "journal_title": "Phys.Rev.",
+                            "journal_volume": "87"
+                        }
+                    }
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/81406"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1888",
+                            "page_start": "1888",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "7"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/46365"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "22",
+                            "page_start": "22",
+                            "journal_title": "Phys.Rev.",
+                            "journal_volume": "117"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/55121"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "48",
+                            "page_start": "48",
+                            "journal_title": "Commun.Math.Phys.",
+                            "journal_volume": "16"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/52828"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "649",
+                            "page_start": "649",
+                            "journal_title": "Nucl.Phys.B",
+                            "journal_volume": "9"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/9087"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1736",
+                            "page_start": "1736",
+                            "journal_title": "Phys.Rev.",
+                            "journal_volume": "75"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/47646"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "326",
+                            "page_start": "326",
+                            "journal_title": "Phys.Rev.",
+                            "journal_volume": "83"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/12286"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "407",
+                            "page_start": "407",
+                            "journal_title": "Annals Phys.",
+                            "journal_volume": "2"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "179",
+                            "page_start": "179",
+                            "journal_title": "Nuovo Cim.",
+                            "journal_volume": "8"
+                        }
+                    }
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "781",
+                            "page_start": "781",
+                            "journal_title": "Nuovo Cim.",
+                            "journal_volume": "8"
+                        }
+                    }
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "53",
+                            "page_start": "53",
+                            "journal_title": "Nuovo Cim.",
+                            "journal_volume": "16"
+                        }
+                    }
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/65988"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "33",
+                            "page_start": "33",
+                            "journal_title": "Fields Quanta",
+                            "journal_volume": "1"
+                        }
+                    },
+                    "curated_relation": false
+                }],
+                "document_type": ["article"],
+                "preprint_date": "1974-01",
+                "control_number": 658,
+                "legacy_version": "20170328193659.0",
+                "number_of_pages": 94,
+                "inspire_categories": [{
+                    "term": "Theory-HEP",
+                    "source": "curator"
+                }],
+                "legacy_creation_date": "1974-01-01",
+                "external_system_identifiers": [{
+                    "value": "4284876",
+                    "schema": "OSTI"
+                }, {
+                    "value": "1974PhRvD...9.2291L",
+                    "schema": "ADS"
+                }, {
+                    "value": "419866",
+                    "schema": "CDS"
+                }, {
+                    "value": "SPIRES-19933",
+                    "schema": "SPIRES"
+                }]
+            },
+            "id": "658",
+            "updated": "2021-06-26T09:38:36.139069+00:00",
+            "created": "1974-01-01T00:00:00+00:00"
+        }, {
+            "links": {
+                "bibtex": "https://inspirehep.net/api/literature/7168?format=bibtex",
+                "latex-eu": "https://inspirehep.net/api/literature/7168?format=latex-eu",
+                "latex-us": "https://inspirehep.net/api/literature/7168?format=latex-us",
+                "json": "https://inspirehep.net/api/literature/7168?format=json",
+                "cv": "https://inspirehep.net/api/literature/7168?format=cv",
+                "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A7168"
+            },
+            "metadata": {
+                "authors": [{
+                    "uuid": "2eae2ce4-ad43-4fb7-8286-d02adb93b155",
+                    "first_name": "Howard I.",
+                    "last_name": "Leemon",
+                    "ids": [{
+                        "value": "H.I.Leemon.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "bai": "H.I.Leemon.1",
+                    "full_name_unicode_normalized": "leemon, howard i.",
+                    "affiliations": [{
+                        "value": "Edinburgh U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902787"
+                        }
+                    }],
+                    "signature_block": "LANANh",
+                    "full_name": "Leemon, Howard I."
+                }],
+                "citation_count_without_self_citations": 145,
+                "citation_count": 145,
+                "publication_info": [{
+                    "year": 1979,
+                    "artid": "489",
+                    "page_start": "489",
+                    "journal_title": "J.Phys.A",
+                    "journal_volume": "12"
+                }],
+                "report_numbers": [{
+                    "value": "Print-78-0991 (EDINBURGH)"
+                }],
+                "first_author": {
+                    "first_name": "Howard I.",
+                    "last_name": "Leemon",
+                    "ids": [{
+                        "value": "H.I.Leemon.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name": "Leemon, Howard I."
+                },
+                "abstracts": [{
+                    "abstract_source_suggest": {
+                        "input": "IOP"
+                    },
+                    "value": "For pt.I see ibid., vol.12 (1979). The quantum mechanical Coulomb and isotropic oscillator problems in an N-dimensional spherical geometry, which were shown in the previous paper to possess the dynamical symmetry groups SO(N+1) and SU(N) respectively as classical systems, are analysed by the method used by Pauli to find the energy eigenvalues of the hydrogen atom. This analysis is carried through completely for N=3 to obtain energy eigenvalues and recurrence relations among energy eigenfunctions. It is shown that Pauli's method is equivalent to Schrodinger's method of solving the radial Schrodinger equation by factorisation of the second order differential operator. The latter method is used to find the energy eigenvalues in N dimensions, and the corresponding eigenfunctions are obtained in closed form.",
+                    "source": "IOP"
+                }],
+                "referenced_authors_bais": ["E.Schrodinger.1", "L.Infeld.1", "Peter.W.Higgs.1", "T.E.Hull.1"],
+                "journal_title_variants": ["J. Phys. A", "J.Phys.A"],
+                "earliest_date": "1978-10",
+                "author_count": 1,
+                "facet_author_name": ["NOREC_Howard I. Leemon"],
+                "dois": [{
+                    "value": "10.1088/0305-4470/12/4/009"
+                }],
+                "titles": [{
+                    "title": "Dynamical Symmetries in a Spherical Geometry. 2"
+                }, {
+                    "title": "DYNAMICAL SYMMETRIES IN A SPHERICAL GEOMETRY. 2"
+                }],
+                "$schema": "https://inspirehep.net/schemas/records/hep.json",
+                "curated": true,
+                "texkeys": ["Leemon:1978yz"],
+                "citeable": true,
+                "refereed": true,
+                "references": [{
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/7167"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "309",
+                            "page_start": "309",
+                            "journal_title": "J.Phys.A",
+                            "journal_volume": "12"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/3542"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "21",
+                            "page_start": "21",
+                            "journal_title": "Rev.Mod.Phys.",
+                            "journal_volume": "23"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1659",
+                            "page_start": "1659",
+                            "journal_title": "J.Phys.A",
+                            "journal_volume": "8"
+                        }
+                    }
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "924",
+                            "page_start": "924",
+                            "journal_title": "Yad.Fiz.",
+                            "journal_volume": "3"
+                        }
+                    }
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "676",
+                            "page_start": "676",
+                            "journal_title": "Sov.J.Nucl.Phys.",
+                            "journal_volume": "3"
+                        }
+                    }
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1127",
+                            "page_start": "1127",
+                            "journal_title": "Yad.Fiz.",
+                            "journal_volume": "3"
+                        }
+                    }
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "819",
+                            "page_start": "819",
+                            "journal_title": "Sov.J.Nucl.Phys.",
+                            "journal_volume": "3"
+                        }
+                    }
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/44635"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "9",
+                            "page_start": "9",
+                            "journal_title": "Proc.Roy.Irish Acad.A",
+                            "journal_volume": "46"
+                        }
+                    },
+                    "curated_relation": false
+                }],
+                "document_type": ["article"],
+                "preprint_date": "1978-10",
+                "control_number": 7168,
+                "legacy_version": "20180223084804.0",
+                "number_of_pages": 19,
+                "inspire_categories": [{
+                    "term": "Math and Math Physics"
+                }],
+                "legacy_creation_date": "1978-10-01",
+                "external_system_identifiers": [{
+                    "value": "1979JPhA...12..489L",
+                    "schema": "ADS"
+                }, {
+                    "value": "SPIRES-322326",
+                    "schema": "SPIRES"
+                }]
+            },
+            "id": "7168",
+            "updated": "2021-06-26T09:30:15.473111+00:00",
+            "created": "1978-10-01T00:00:00+00:00"
+        }, {
+            "links": {
+                "bibtex": "https://inspirehep.net/api/literature/9131?format=bibtex",
+                "latex-eu": "https://inspirehep.net/api/literature/9131?format=latex-eu",
+                "latex-us": "https://inspirehep.net/api/literature/9131?format=latex-us",
+                "json": "https://inspirehep.net/api/literature/9131?format=json",
+                "cv": "https://inspirehep.net/api/literature/9131?format=cv",
+                "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A9131"
+            },
+            "metadata": {
+                "authors": [{
+                    "first_name": "J.E.",
+                    "ids": [{
+                        "value": "J.E.Moyal.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "last_name": "Moyal",
+                    "signature_block": "MYALj",
+                    "full_name": "Moyal, J.E.",
+                    "affiliations": [{
+                        "value": "Queen's U., Belfast",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903442"
+                        }
+                    }],
+                    "full_name_unicode_normalized": "moyal, j.e.",
+                    "uuid": "f4569d0c-4263-4a9e-acec-fdc0eeb3f8c7",
+                    "bai": "J.E.Moyal.1"
+                }],
+                "citation_count_without_self_citations": 1125,
+                "citation_count": 1125,
+                "publication_info": [{
+                    "year": 1949,
+                    "page_end": "124",
+                    "page_start": "99",
+                    "journal_title": "Proc.Cambridge Phil.Soc.",
+                    "journal_record": {
+                        "$ref": "https://inspirehep.net/api/journals/1214531"
+                    },
+                    "journal_volume": "45"
+                }, {
+                    "pubinfo_freetext": "In *Li, M. (ed.) et al.: Physics in non-commutative world* 9-33"
+                }],
+                "journal_title_variants": ["Proc.Cambridge Phil.Soc.", "Proc. Cambridge Phil. Soc."],
+                "abstracts": [{
+                    "value": "An attempt is made to interpret quantum mechanics as a statistical theory, or more exactly as a form of non-deterministic statistical dynamics. The paper falls into three parts. In the first, the distribution functions of the complete set of dynamical variables specifying a mechanical system (phase-space distributions), which are fundamental in any form of statistical dynamics, are expressed in terms of the wave vectors of quantum theory. This is shown to be equivalent to specifying a theory of functions of non-commuting operators, and may hence be considered as an interpretation of quantum kinematics. In the second part, the laws governing the transformation with time of these phase-space distributions are derived from the equations of motion of quantum dynamics and found to be of the required form for a dynamical stochastic process. It is shown that these phase-space transformation equations can be used as an alternative to the Schrödinger equation in the solution of quantum mechanical problems, such as the evolution with time of wave packets, collision problems and the calculation of transition probabilities in perturbed systems; an approximation method is derived for this purpose. The third part, quantum statistics, deals with the phase-space distribution of members of large assemblies, with a view to applications of quantum mechanics to kinetic theories of matter. Finally, the limitations of the theory, its uniqueness and the possibilities of experimental verification are discussed."
+                }],
+                "author_count": 1,
+                "earliest_date": "1949",
+                "facet_author_name": ["NOREC_J.E. Moyal"],
+                "first_author": {
+                    "first_name": "J.E.",
+                    "ids": [{
+                        "value": "J.E.Moyal.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "last_name": "Moyal",
+                    "full_name": "Moyal, J.E."
+                },
+                "dois": [{
+                    "value": "10.1017/S0305004100000487"
+                }],
+                "titles": [{
+                    "title": "Quantum mechanics as a statistical theory"
+                }, {
+                    "title": "Quantum mechanics as a statistical theory.",
+                    "source": "arXiv"
+                }],
+                "$schema": "https://inspirehep.net/schemas/records/hep.json",
+                "curated": true,
+                "texkeys": ["Moyal:1949sk"],
+                "citeable": true,
+                "refereed": true,
+                "document_type": ["article"],
+                "preprint_date": "1949",
+                "control_number": 9131,
+                "legacy_version": "20191009215617.0",
+                "number_of_pages": 26,
+                "legacy_creation_date": "1997-07-08",
+                "external_system_identifiers": [{
+                    "value": "4416065",
+                    "schema": "OSTI"
+                }, {
+                    "value": "SPIRES-620270",
+                    "schema": "SPIRES"
+                }]
+            },
+            "id": "9131",
+            "updated": "2021-06-26T09:27:21.998571+00:00",
+            "created": "1997-07-08T00:00:00+00:00"
+        }, {
+            "links": {
+                "bibtex": "https://inspirehep.net/api/literature/5566?format=bibtex",
+                "latex-eu": "https://inspirehep.net/api/literature/5566?format=latex-eu",
+                "latex-us": "https://inspirehep.net/api/literature/5566?format=latex-us",
+                "json": "https://inspirehep.net/api/literature/5566?format=json",
+                "cv": "https://inspirehep.net/api/literature/5566?format=cv",
+                "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A5566"
+            },
+            "metadata": {
+                "authors": [{
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Barish, S.J.",
+                    "ids": [{
+                        "value": "S.J.Barish.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "barish, s.j.",
+                    "bai": "S.J.Barish.1",
+                    "first_name": "S.J.",
+                    "signature_block": "BARASs",
+                    "uuid": "e095538d-3624-40c4-9164-78e0309df554",
+                    "last_name": "Barish"
+                }, {
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Campbell, J.",
+                    "ids": [{
+                        "value": "J.R.Campbell.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "campbell, j.",
+                    "bai": "J.R.Campbell.1",
+                    "first_name": "J.",
+                    "signature_block": "CANPBALj",
+                    "uuid": "402a79a0-8c67-467f-afb2-b954d052c2f4",
+                    "last_name": "Campbell"
+                }, {
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Charlton, G.",
+                    "ids": [{
+                        "value": "G.Charlton.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "charlton, g.",
+                    "bai": "G.Charlton.1",
+                    "first_name": "G.",
+                    "signature_block": "CARLTANg",
+                    "uuid": "fcce94f6-d5bb-47b6-abb0-b02f2d77ef4e",
+                    "last_name": "Charlton"
+                }, {
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Cho, Y.",
+                    "ids": [{
+                        "value": "Y.Cho.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "cho, y.",
+                    "bai": "Y.Cho.1",
+                    "first_name": "Y.",
+                    "signature_block": "Cy",
+                    "uuid": "38759dcb-7476-4c74-a5ad-df68c676f5b7",
+                    "last_name": "Cho"
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1011975"
+                    },
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Derrick, M.",
+                    "ids": [{
+                        "value": "M.Derrick.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "derrick, m.",
+                    "recid": 1011975,
+                    "bai": "M.Derrick.1",
+                    "first_name": "M.",
+                    "signature_block": "DARACm",
+                    "uuid": "cdd52648-da83-4e61-9a00-6c76862a57f0",
+                    "last_name": "Derrick"
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1010724"
+                    },
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Engelmann, R.",
+                    "ids": [{
+                        "value": "R.Engelmann.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "engelmann, r.",
+                    "recid": 1010724,
+                    "bai": "R.Engelmann.1",
+                    "first_name": "R.",
+                    "signature_block": "ENGALNANr",
+                    "uuid": "ee8f2fa2-07b5-4cc2-99af-8350e5bec17d",
+                    "last_name": "Engelmann",
+                    "curated_relation": true
+                }, {
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Hyman, L.G.",
+                    "ids": [{
+                        "value": "L.G.Hyman.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "hyman, l.g.",
+                    "bai": "L.G.Hyman.1",
+                    "first_name": "L.G.",
+                    "signature_block": "HANANl",
+                    "uuid": "06ac83e5-cb59-4b4a-865a-9c723b4d8ca9",
+                    "last_name": "Hyman"
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1074971"
+                    },
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Jankowski, D.",
+                    "ids": [{
+                        "value": "D.J.Jankowski.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "jankowski, d.",
+                    "recid": 1074971,
+                    "bai": "D.J.Jankowski.1",
+                    "first_name": "D.",
+                    "signature_block": "JANCASCd",
+                    "uuid": "01ff439a-619e-46ea-88a6-47aeba8abccb",
+                    "last_name": "Jankowski"
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/998953"
+                    },
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Mann, A.",
+                    "ids": [{
+                        "value": "William.Anthony.Mann.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "mann, a.",
+                    "recid": 998953,
+                    "bai": "William.Anthony.Mann.1",
+                    "first_name": "A.",
+                    "signature_block": "MANa",
+                    "uuid": "fcf70ec4-ca7a-44af-a169-189c5ea2732a",
+                    "last_name": "Mann",
+                    "curated_relation": true
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/996398"
+                    },
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Musgrave, B.",
+                    "ids": [{
+                        "value": "B.Musgrave.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "musgrave, b.",
+                    "recid": 996398,
+                    "bai": "B.Musgrave.1",
+                    "first_name": "B.",
+                    "signature_block": "MASGRAVb",
+                    "uuid": "b5940493-a46f-4d90-a490-7c4c8cd77c55",
+                    "last_name": "Musgrave"
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1041779"
+                    },
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Schreiner, P.",
+                    "ids": [{
+                        "value": "P.Schreiner.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "schreiner, p.",
+                    "recid": 1041779,
+                    "bai": "P.Schreiner.1",
+                    "first_name": "P.",
+                    "signature_block": "SRANARp",
+                    "uuid": "6f105423-9848-4395-86f1-b7bf2886f03f",
+                    "last_name": "Schreiner"
+                }, {
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Schultz, P.F.",
+                    "ids": [{
+                        "value": "P.F.Schultz.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "schultz, p.f.",
+                    "bai": "P.F.Schultz.1",
+                    "first_name": "P.F.",
+                    "signature_block": "SALTp",
+                    "uuid": "3b60155d-4399-4c9c-9fac-f619c12c36f8",
+                    "last_name": "Schultz"
+                }, {
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Singer, R.",
+                    "ids": [{
+                        "value": "R.Singer.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "singer, r.",
+                    "bai": "R.Singer.1",
+                    "first_name": "R.",
+                    "signature_block": "SANGARr",
+                    "uuid": "7752a0d3-ef26-471d-addf-cb8d2721c665",
+                    "last_name": "Singer"
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/986951"
+                    },
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Szczekowski, M.",
+                    "ids": [{
+                        "value": "M.Szczekowski.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "szczekowski, m.",
+                    "recid": 986951,
+                    "bai": "M.Szczekowski.1",
+                    "first_name": "M.",
+                    "signature_block": "SCSACASCm",
+                    "uuid": "521eed96-33f1-4d23-b343-59e27e9c9eb7",
+                    "last_name": "Szczekowski"
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1075534"
+                    },
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Wangler, T.",
+                    "ids": [{
+                        "value": "T.P.Wangler.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "wangler, t.",
+                    "recid": 1075534,
+                    "bai": "T.P.Wangler.1",
+                    "first_name": "T.",
+                    "signature_block": "WANGLARt",
+                    "uuid": "4b1bb8de-9166-4f4f-885b-72e41c9b8e6a",
+                    "last_name": "Wangler"
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/982466"
+                    },
+                    "affiliations": [{
+                        "value": "Argonne",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/902645"
+                        }
+                    }],
+                    "full_name": "Yuta, H.",
+                    "ids": [{
+                        "value": "H.Yuta.2",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "yuta, h.",
+                    "recid": 982466,
+                    "bai": "H.Yuta.2",
+                    "first_name": "H.",
+                    "signature_block": "YATh",
+                    "uuid": "721c3775-d1eb-4885-af76-45022823c56b",
+                    "last_name": "Yuta"
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1017317"
+                    },
+                    "affiliations": [{
+                        "value": "Purdue U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903142"
+                        }
+                    }],
+                    "full_name": "Barnes, V.E.",
+                    "ids": [{
+                        "value": "V.E.Barnes.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "barnes, v.e.",
+                    "recid": 1017317,
+                    "bai": "V.E.Barnes.1",
+                    "first_name": "V.E.",
+                    "signature_block": "BARNv",
+                    "uuid": "fc03c0d3-20ca-45f0-ae8b-43b2f437b2fa",
+                    "last_name": "Barnes"
+                }, {
+                    "affiliations": [{
+                        "value": "Purdue U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903142"
+                        }
+                    }],
+                    "full_name": "Carmony, D.D.",
+                    "ids": [{
+                        "value": "D.D.Carmony.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "carmony, d.d.",
+                    "bai": "D.D.Carmony.1",
+                    "first_name": "D.D.",
+                    "signature_block": "CARNANYd",
+                    "uuid": "b8c3abe7-b0b5-45ad-91f4-7699eb0bb2f6",
+                    "last_name": "Carmony"
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1008855"
+                    },
+                    "affiliations": [{
+                        "value": "Purdue U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903142"
+                        }
+                    }],
+                    "full_name": "Garfinkel, A.F.",
+                    "ids": [{
+                        "value": "A.F.Garfinkel.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "garfinkel, a.f.",
+                    "recid": 1008855,
+                    "bai": "A.F.Garfinkel.1",
+                    "first_name": "A.F.",
+                    "signature_block": "GARFANCALa",
+                    "uuid": "84331d32-5e32-4aae-bf04-3c532df9b9f2",
+                    "last_name": "Garfinkel",
+                    "curated_relation": true
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/992473"
+                    },
+                    "affiliations": [{
+                        "value": "Purdue U.",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903142"
+                        }
+                    }],
+                    "full_name": "Radecky, G.M.",
+                    "ids": [{
+                        "value": "G.M.Radecky.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name_unicode_normalized": "radecky, g.m.",
+                    "recid": 992473,
+                    "bai": "G.M.Radecky.1",
+                    "first_name": "G.M.",
+                    "signature_block": "RADACYg",
+                    "uuid": "db3ff6d0-1006-4a44-b3c8-97284287dabc",
+                    "last_name": "Radecky"
+                }],
+                "citation_count_without_self_citations": 263,
+                "citation_count": 277,
+                "publication_info": [{
+                    "year": 1977,
+                    "artid": "3103",
+                    "page_start": "3103",
+                    "journal_title": "Phys.Rev.D",
+                    "journal_volume": "16"
+                }],
+                "report_numbers": [{
+                    "value": "ANL-HEP-PR-76-69"
+                }],
+                "journal_title_variants": ["Phys.Rev.D", "Phys. Rev. D"],
+                "referenced_authors_bais": ["A.Del.Guerra.1", "A.D.Krisch.1", "A.F.Garfinkel.1", "A.Frondaroli.1", "A.F.Stehney.1", "A.Giazotto.1", "A.G.Michette.1", "A.Ladage.1", "A.Lagarrigue.1", "A.M.Lutz.1", "A.M.Wetherell.2", "A.N.Diddens.2", "A.Norton.2", "A.Orkin.Lecourtois.1", "A.Pullia.1", "A.Rousset.1", "A.Stefanini.1", "A.W.Key.1", "A.Yokosawa.1", "B.Aubert.1", "B.Bartoli.1", "B.Borgia.1", "B.Degrange.1", "B.Eiben.1", "B.Musgrave.1", "B.Osculati.1", "B.Pontecorvo.1", "B.P.Roe.1", "C.A.Ramm.1", "C.Benz.1", "C.C.Martin.1", "C.Conta.1", "C.Franzinetti.1", "Ching.Lin.Wang.1", "C.H.Llewellyn.Smith.1", "C.Jordan.1", "C.K.Chen.1", "C.L.Cowan.1", "C.Manfredotti.1", "C.N.Yang.1", "C.Sander.2", "C.Stearns.2", "C.Y.Prescott.1", "D.Blum.1", "D.Cavalli.1", "D.Cords.1", "D.Cundy.1", "D.D.Carmony.1", "D.D.Koetke.1", "D.Haidt.1", "D.Hodges.1", "D.Hoffmann.1", "D.H.Perkins.1", "D.J.Jankowski.1", "D.Lanske.1", "D.Lundquist.1", "Drasko.D.Jovanovic.1", "D.R.Botterill.2", "D.Swanson.1", "E.Amaldi.1", "E.Bellotti.1", "E.D.Bloom.1", "E.Fiorini.1", "E.Lillethun.1", "Enrique.Fernandez.1", "E.P.Steinberg.1", "E.Rabe.2", "F.A.Nezrick.1", "F.Beck.3", "F.Calaprice.1", "F.Chilton.1", "F.De.Notaristefani.1", "F.Felicetti.1", "F.J.Hasert.1", "F.Reines.1", "F.W.Buesser.1", "F.W.Bullock.1", "G.Bertrand.Coremans.1", "G.Charlton.1", "G.Cocconi.1", "G.Drews.1", "G.E.Wolf.1", "G.Grindhammer.1", "Giorgio.Bellettini.1", "G.J.Marmer.1", "G.Matone.1", "G.Matthiae.1", "G.Myatt.1", "G.T.Danby.1", "G.T.Garvey.1", "G.Weber.9", "H.B.Phillips.1", "H.Burmeister.1", "H.C.DeStaebler.1", "H.C.Vantine.1", "H.Krehbiel.1", "H.Meyer.7", "H.Nagel.2", "H.Piel.1", "H.Sletten.1", "H.Spitzer.1", "Hugh.E.Montgomery.1", "H.Wachsmuth.1", "H.Weerts.1", "H.W.K.Hopkins.1", "H.Yoshiki.1", "H.Yuta.2", "I.A.Budagov.1", "I.A.Danilchenko.1", "I.Nikolic.3", "I.O.Skillicorn.1", "I.Sestili.1", "I.Spaletto.1", "I.Tanihata.1", "James.J.Whitmore.1", "J.B.M.Pattison.1", "J.G.Asbury.1", "J.G.Fetkovich.1", "J.G.Loken.1", "J.Goring.1", "J.Keren.1", "J.Knobloch.1", "J.Knowles.1", "J.K.Randolph.1", "J.L.Day.1", "J.McKenzie.1", "J.Meyer.6", "J.M.Gaillard.1", "J.M.Scarr.1", "Jorge.G.Morfin.1", "J.P.Scanlon.1", "J.P.Vialle.1", "J.R.Campbell.1", "J.Rest.2", "J.Sacton.1", "J.Steinberger.1", "J.von.Krogh.1", "K.A.Goulianos.1", "K.Jaeger.1", "K.Schultze.1", "K.Smith.1", "K.Soop.1", "K.Sugimoto.1", "K.Wacker.1", "L.G.Hyman.1", "L.G.Ratner.1", "L.Kluberg.1", "L.L.Cottrell.1", "L.M.Chounet.1", "L.M.Lederman.1", "M.A.Giorgi.1", "M.Benevantano.1", "M.Derrick.1", "M.Haguenauer.1", "M.J.Esten.1", "M.L.Marshak.1", "M.M.Block.1", "M.Nikolic.1", "M.Nikolik.1", "M.Paty.1", "M.Rollier.1", "M.Schwartz.1", "M.Severi.1", "M.Szczekowski.1", "M.T.Lin.1", "N.B.Mistry.1", "P.Brauel.1", "P.C.Stein.1", "P.Heusse.1", "P.Joos.1", "P.Kalbaci.1", "P.Musset.1", "P.Petiau.1", "P.Pistilli.1", "P.P.Vilain.1", "P.Schreiner.1", "P.Soeding.1", "R.Ammar.1", "R.A.Sunde.1", "R.Baldi.2", "R.B.Palmer.1", "R.Engelmann.1", "R.E.Taylor.1", "R.E.Tribble.1", "R.Felst.1", "R.H.Siemann.1", "R.L.Kustom.1", "R.Lundy.1", "R.Mollerud.2", "R.P.Smith.1", "R.Royston.1", "R.Singer.1", "R.Stump.1", "S.Bonetti.1", "S.J.Barish.1", "S.J.Freedman.1", "S.J.Yellin.1", "S.Kabe.1", "S.Natali.1", "S.Singh.2", "S.Stein.2", "T.B.Novey.1", "T.Canzler.1", "T.D.Lee.1", "T.P.Wangler.1", "T.W.Dombeck.1", "T.W.Jones.3", "U.Camerini.1", "U.Mehtani.1", "U.Nguyen.Khac.1", "V.Brisson.1", "V.E.Barnes.1", "V.L.Telegdi.1", "V.Silvestrini.1", "W.B.Fretter.1", "W.C.Mead.1", "W.D.Kollmann.1", "W.F.Fry.1", "W.G.Scott.1", "William.Anthony.Mann.1", "W.Kraus.1", "W.Krenz.1", "W.R.Dix.1", "W.Schlatter.1", "W.Van.Doninck.1", "W.Venus.1", "W.W.M.Allison.1", "Y.Cho.1", "Y.Oren.1"],
+                "earliest_date": "1977-07",
+                "author_count": 20,
+                "abstracts": [{
+                    "value": "This paper gives a detailed description of an experiment which studies the interactions of muon-type neutrinos in hydrogen and deuterium. The experiment was performed at the Zero Gradient Synchrotron using the wide-band neutrino beam incident on the Argonne 12-foot bubble chamber filled with hydrogen and deuterium. The neutrino energy spectrum peaks at 0.5 GeV and has a tail extending to 6 GeV. The shape and intensity of the flux is determined using measurements of pion yields from beryllium. The produced pions are focused by one or (for the latter part of the experiment) two magnetic horns. A total of 364000 pictures were taken with a hydrogen filling of the bubble chamber and 903 000 with a deuterium filling. The scanning and other analyses of the events are described. The most abundant reaction occurs off neutrons and is quasi-elastic scattering νd→μ−pps. The separation of these events from background channels is discussed. The total and differential cross sections are analyzed to obtain the axial-vector form factor of the nucleon. Our result, expressed in terms of a dipole form factor, gives an axial-vector mass of 0.95±0.09 GeV. A comparison is made to previous measurements using neutrino beams, and also to determinations based upon threshold pion electroproduction experiments. In addition, the data are used to measure the weak vector form factor and so check the conserved-vector-current hypothesis.",
+                    "source": "APS",
+                    "abstract_source_suggest": {
+                        "input": "APS"
+                    }
+                }],
+                "facet_author_name": ["982466_Haruo Yuta", "986951_Marek Szczekowski", "992473_Gregory M. Radecky", "996398_Brian Musgrave", "998953_Anthony Mann", "1008855_Arthur F. Garfinkel", "1010724_Roderich J. Engelmann", "1011975_Malcolm Derrick", "1017317_Virgil E. Barnes", "1041779_Philip A. Schreiner", "1074971_Brian D. Jankowski", "1075534_Thomas Wangler", "NOREC_S.J. Barish", "NOREC_J. Campbell", "NOREC_G. Charlton", "NOREC_Y. Cho", "NOREC_L.G. Hyman", "NOREC_P.F. Schultz", "NOREC_R. Singer", "NOREC_D.D. Carmony"],
+                "first_author": {
+                    "full_name": "Barish, S.J.",
+                    "ids": [{
+                        "value": "S.J.Barish.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "first_name": "S.J.",
+                    "last_name": "Barish"
+                },
+                "core": true,
+                "dois": [{
+                    "value": "10.1103/PhysRevD.16.3103"
+                }],
+                "titles": [{
+                    "title": "Study of Neutrino Interactions in Hydrogen and Deuterium. 1. Description of the Experiment and Study of the Reaction Neutrino d --> mu- p p(s)"
+                }],
+                "$schema": "https://inspirehep.net/schemas/records/hep.json",
+                "curated": true,
+                "texkeys": ["Barish:1977qk"],
+                "citeable": true,
+                "keywords": [{
+                    "value": "NEUTRINO P: INTERACTION",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "INTERACTION: NEUTRINO P",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "NEUTRINO DEUTERON: INTERACTION",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "INTERACTION: NEUTRINO DEUTERON",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "P: FINAL STATE",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FINAL STATE: P",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "MUON-: FINAL STATE",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FINAL STATE: MUON-",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "NEUTRINO/MU/: BEAM",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "BEAM: NEUTRINO/MU/",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "NEUTRINO/MU/: ENERGY",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "NEUTRINO/MU/: FLUX",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FLUX: NEUTRINO/MU/",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "BUBBLE CHAMBER",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "TRACK DATA ANALYSIS",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "N: BACKGROUND",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "FORM FACTOR: MEASUREMENT",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "BUBBLE CHAMBER(DEUTERON): EXPERIMENTAL RESULTS",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "EXPERIMENTAL RESULTS: BUBBLE CHAMBER(DEUTERON)",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "ARGONNE PS",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "NEUTRINO/MU/ DEUTERON --> 2P MUON-",
+                    "schema": "INSPIRE"
+                }, {
+                    "value": "UP TO 6 GEV",
+                    "schema": "INSPIRE"
+                }],
+                "refereed": true,
+                "references": [{
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/40475"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "830",
+                            "page_start": "830",
+                            "journal_title": "Phys.Rev.",
+                            "journal_volume": "92"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/32726"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "306",
+                            "page_start": "306",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "4"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/25384"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1236",
+                            "page_start": "1236",
+                            "journal_title": "Sov.Phys.JETP",
+                            "journal_volume": "10"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/28187"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "36",
+                            "page_start": "36",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "9"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "338",
+                            "page_start": "338",
+                            "journal_title": "Nuovo Cim.",
+                            "journal_volume": "57"
+                        }
+                    }
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/56495"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1014",
+                            "page_start": "1014",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "22"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/1816137"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "281",
+                            "page_start": "281",
+                            "journal_title": "Phys.Lett.",
+                            "journal_volume": "12"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/56731"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "524",
+                            "page_start": "524",
+                            "journal_title": "Phys.Lett.B",
+                            "journal_volume": "29"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/83770"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "844",
+                            "page_start": "844",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "31"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/84537"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "335",
+                            "page_start": "335",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "30"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/2688"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "179",
+                            "page_start": "179",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "36"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/4240"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "291",
+                            "page_start": "291",
+                            "journal_title": "Phys.Lett.B",
+                            "journal_volume": "66"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/83735"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "138",
+                            "page_start": "138",
+                            "journal_title": "Phys.Lett.B",
+                            "journal_volume": "46"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/89586"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "448",
+                            "page_start": "448",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "33"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/1433704"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "265",
+                            "page_start": "265",
+                            "journal_title": "Nucl.Phys.A",
+                            "journal_volume": "113"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/74800"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1967",
+                            "page_start": "1967",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "4"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/55574"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "2086",
+                            "page_start": "2086",
+                            "journal_title": "Phys.Rev.",
+                            "journal_volume": "178"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/68160"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1089",
+                            "page_start": "1089",
+                            "journal_title": "Phys.Rev.D",
+                            "journal_volume": "3"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/62855"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1068",
+                            "page_start": "1068",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "25"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1536",
+                            "page_start": "1536",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "25"
+                        }
+                    }
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/892536"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "609",
+                            "page_start": "609",
+                            "journal_title": "Nucl.Phys.",
+                            "journal_volume": "79"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/49630"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "504",
+                            "page_start": "504",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "14"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/64203"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "129",
+                            "page_start": "129",
+                            "journal_title": "Nucl.Instrum.Meth.",
+                            "journal_volume": "84"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/57739"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "689",
+                            "page_start": "689",
+                            "journal_title": "Lett.Nuovo Cim.",
+                            "journal_volume": "2"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/23022"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "2239",
+                            "page_start": "2239",
+                            "journal_title": "Phys.Rev.",
+                            "journal_volume": "126"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/67183"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "261",
+                            "page_start": "261",
+                            "journal_title": "Phys.Rept.",
+                            "journal_volume": "3"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/69347"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "419",
+                            "page_start": "419",
+                            "journal_title": "Nucl.Phys.B",
+                            "journal_volume": "36"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/75633"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "216",
+                            "page_start": "216",
+                            "journal_title": "Phys.Lett.B",
+                            "journal_volume": "41"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/81018"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1186",
+                            "page_start": "1186",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "30"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/108310"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "65",
+                            "page_start": "65",
+                            "journal_title": "Nucl.Phys.B",
+                            "journal_volume": "107"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/84792"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "389",
+                            "page_start": "389",
+                            "journal_title": "Phys.Lett.B",
+                            "journal_volume": "45"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/108247"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "230",
+                            "page_start": "230",
+                            "journal_title": "Phys.Lett.B",
+                            "journal_volume": "62"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/79132"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "241",
+                            "page_start": "241",
+                            "journal_title": "Riv.Nuovo Cim.",
+                            "journal_volume": "2"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/107904"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1533",
+                            "page_start": "1533",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "34"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/107944"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "1566",
+                            "page_start": "1566",
+                            "journal_title": "Phys.Rev.Lett.",
+                            "journal_volume": "35"
+                        }
+                    },
+                    "curated_relation": false
+                }, {
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/literature/107743"
+                    },
+                    "reference": {
+                        "publication_info": {
+                            "artid": "967",
+                            "page_start": "967",
+                            "journal_title": "Phys.Rev.C",
+                            "journal_volume": "12"
+                        }
+                    },
+                    "curated_relation": false
+                }],
+                "document_type": ["article"],
+                "preprint_date": "1977-07",
+                "control_number": 5566,
+                "legacy_version": "20171116151854.0",
+                "number_of_pages": 64,
+                "inspire_categories": [{
+                    "term": "Experiment-HEP"
+                }],
+                "legacy_creation_date": "1977-07-01",
+                "external_system_identifiers": [{
+                    "value": "ins5566",
+                    "schema": "HEPDATA"
+                }, {
+                    "value": "1977PhRvD..16.3103B",
+                    "schema": "ADS"
+                }, {
+                    "value": "1977-08-085",
+                    "schema": "KEKSCAN"
+                }, {
+                    "value": "SPIRES-233870",
+                    "schema": "SPIRES"
+                }]
+            },
+            "id": "5566",
+            "updated": "2021-06-25T22:18:45.827255+00:00",
+            "created": "1977-07-01T00:00:00+00:00"
+        }, {
+            "links": {
+                "bibtex": "https://inspirehep.net/api/literature/8783?format=bibtex",
+                "latex-eu": "https://inspirehep.net/api/literature/8783?format=latex-eu",
+                "latex-us": "https://inspirehep.net/api/literature/8783?format=latex-us",
+                "json": "https://inspirehep.net/api/literature/8783?format=json",
+                "cv": "https://inspirehep.net/api/literature/8783?format=cv",
+                "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A8783"
+            },
+            "metadata": {
+                "authors": [{
+                    "uuid": "fb35d8c7-1c58-44e1-a782-437b288f042b",
+                    "full_name_unicode_normalized": "low, f.e.",
+                    "affiliations": [{
+                        "value": "MIT, LNS",
+                        "record": {
+                            "$ref": "https://inspirehep.net/api/institutions/903016"
+                        }
+                    }],
+                    "signature_block": "Lf",
+                    "first_name": "F.E.",
+                    "full_name": "Low, F.E.",
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/999725"
+                    },
+                    "recid": 999725,
+                    "last_name": "Low",
+                    "bai": "F.E.Low.1",
+                    "ids": [{
+                        "value": "F.E.Low.1",
+                        "schema": "INSPIRE BAI"
+                    }]
+                }],
+                "citation_count_without_self_citations": 929,
+                "citation_count": 929,
+                "publication_info": [{
+                    "year": 1958,
+                    "page_end": "977",
+                    "page_start": "974",
+                    "journal_title": "Phys.Rev.",
+                    "journal_record": {
+                        "$ref": "https://inspirehep.net/api/journals/1214516"
+                    },
+                    "journal_volume": "110"
+                }],
+                "journal_title_variants": ["Phys. Rev.", "Phys.Rev."],
+                "first_author": {
+                    "first_name": "F.E.",
+                    "full_name": "Low, F.E.",
+                    "recid": 999725,
+                    "last_name": "Low",
+                    "ids": [{
+                        "value": "F.E.Low.1",
+                        "schema": "INSPIRE BAI"
+                    }]
+                },
+                "facet_author_name": ["999725_Francis E. Low"],
+                "abstracts": [{
+                    "abstract_source_suggest": {
+                        "input": "APS"
+                    },
+                    "source": "APS",
+                    "value": "It is shown that the first two terms in the series expansion of the differential bremsstrahlung cross section (in powers of the energy loss) may be calculated exactly in terms of the corresponding elastic amplitude and the electromagnetic constants of the participating particles."
+                }],
+                "author_count": 1,
+                "earliest_date": "1958-01",
+                "dois": [{
+                    "value": "10.1103/PhysRev.110.974"
+                }],
+                "titles": [{
+                    "title": "Bremsstrahlung of very low-energy quanta in elementary particle collisions"
+                }],
+                "$schema": "https://inspirehep.net/schemas/records/hep.json",
+                "curated": true,
+                "texkeys": ["Low:1958sn"],
+                "citeable": true,
+                "refereed": true,
+                "document_type": ["article"],
+                "preprint_date": "1958-01",
+                "control_number": 8783,
+                "legacy_version": "20180223134217.0",
+                "number_of_pages": 4,
+                "inspire_categories": [{
+                    "term": "Accelerators"
+                }],
+                "legacy_creation_date": "1997-05-27",
+                "external_system_identifiers": [{
+                    "value": "4302068",
+                    "schema": "OSTI"
+                }, {
+                    "value": "SPIRES-597252",
+                    "schema": "SPIRES"
+                }]
+            },
+            "id": "8783",
+            "updated": "2021-06-26T09:28:28.334098+00:00",
+            "created": "1997-05-27T00:00:00+00:00"
+        }, {
+            "links": {
+                "bibtex": "https://inspirehep.net/api/literature/9395?format=bibtex",
+                "latex-eu": "https://inspirehep.net/api/literature/9395?format=latex-eu",
+                "latex-us": "https://inspirehep.net/api/literature/9395?format=latex-us",
+                "json": "https://inspirehep.net/api/literature/9395?format=json",
+                "cv": "https://inspirehep.net/api/literature/9395?format=cv",
+                "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A9395"
+            },
+            "metadata": {
+                "authors": [{
+                    "ids": [{
+                        "value": "L.D.Landau.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "last_name": "Landau",
+                    "uuid": "b3edb696-5a7e-448d-806f-76e7133bb0ea",
+                    "full_name_unicode_normalized": "landau, l.d.",
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1019139"
+                    },
+                    "recid": 1019139,
+                    "first_name": "L.D.",
+                    "bai": "L.D.Landau.1",
+                    "full_name": "Landau, L.D.",
+                    "curated_relation": true,
+                    "signature_block": "LANDl"
+                }],
+                "citation_count_without_self_citations": 797,
+                "citation_count": 797,
+                "publication_info": [{
+                    "year": 1953,
+                    "page_end": "64",
+                    "page_start": "51",
+                    "journal_title": "Izv.Akad.Nauk Ser.Fiz.",
+                    "journal_record": {
+                        "$ref": "https://inspirehep.net/api/journals/1214729"
+                    },
+                    "journal_volume": "17"
+                }],
+                "journal_title_variants": ["Izv.Akad.Nauk Ser.Fiz.", "Izv. Akad. Nauk Ser. Fiz."],
+                "earliest_date": "1953",
+                "facet_author_name": ["1019139_Lev Davidovich Landau"],
+                "first_author": {
+                    "ids": [{
+                        "value": "L.D.Landau.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "last_name": "Landau",
+                    "recid": 1019139,
+                    "first_name": "L.D.",
+                    "full_name": "Landau, L.D."
+                },
+                "author_count": 1,
+                "titles": [{
+                    "title": "On the multiparticle production in high-energy collisions"
+                }],
+                "$schema": "https://inspirehep.net/schemas/records/hep.json",
+                "curated": true,
+                "texkeys": ["Landau:1953gs"],
+                "citeable": true,
+                "refereed": true,
+                "languages": ["ru"],
+                "document_type": ["article"],
+                "preprint_date": "1953",
+                "control_number": 9395,
+                "legacy_version": "20160217135049.0",
+                "number_of_pages": 14,
+                "legacy_creation_date": "1997-05-15",
+                "external_system_identifiers": [{
+                    "value": "SPIRES-664014",
+                    "schema": "SPIRES"
+                }]
+            },
+            "id": "9395",
+            "updated": "2021-06-26T09:26:44.286566+00:00",
+            "created": "1997-05-15T00:00:00+00:00"
+        }, {
+            "links": {
+                "bibtex": "https://inspirehep.net/api/literature/3542?format=bibtex",
+                "latex-eu": "https://inspirehep.net/api/literature/3542?format=latex-eu",
+                "latex-us": "https://inspirehep.net/api/literature/3542?format=latex-us",
+                "json": "https://inspirehep.net/api/literature/3542?format=json",
+                "cv": "https://inspirehep.net/api/literature/3542?format=cv",
+                "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3542"
+            },
+            "metadata": {
+                "authors": [{
+                    "record": {
+                        "$ref": "https://inspirehep.net/api/authors/1060927"
+                    },
+                    "uuid": "e2159d2d-e38d-4fbf-bb87-ff7413ecbdf5",
+                    "recid": 1060927,
+                    "first_name": "L.",
+                    "last_name": "Infeld",
+                    "ids": [{
+                        "value": "L.Infeld.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "bai": "L.Infeld.1",
+                    "full_name_unicode_normalized": "infeld, l.",
+                    "signature_block": "INFALDl",
+                    "full_name": "Infeld, L."
+                }, {
+                    "uuid": "c0875443-68f3-4d47-85c0-56b15cb2b1ab",
+                    "first_name": "T.E.",
+                    "last_name": "Hull",
+                    "ids": [{
+                        "value": "T.E.Hull.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "bai": "T.E.Hull.1",
+                    "full_name_unicode_normalized": "hull, t.e.",
+                    "signature_block": "HALt",
+                    "full_name": "Hull, T.E."
+                }],
+                "citation_count_without_self_citations": 550,
+                "citation_count": 550,
+                "publication_info": [{
+                    "year": 1951,
+                    "page_end": "68",
+                    "page_start": "21",
+                    "journal_title": "Rev.Mod.Phys.",
+                    "journal_record": {
+                        "$ref": "https://inspirehep.net/api/journals/1214422"
+                    },
+                    "journal_volume": "23"
+                }],
+                "first_author": {
+                    "recid": 1060927,
+                    "first_name": "L.",
+                    "last_name": "Infeld",
+                    "ids": [{
+                        "value": "L.Infeld.1",
+                        "schema": "INSPIRE BAI"
+                    }],
+                    "full_name": "Infeld, L."
+                },
+                "abstracts": [{
+                    "abstract_source_suggest": {
+                        "input": "APS"
+                    },
+                    "value": "The factorization method is an operational procedure which enables us to answer, in a direct manner, questions about eigenvalue problems which are of importance to physicists. The underlying idea is to consider a pair of first-order differential-difference equations which are equivalent to a given second-order differential equation with boundary conditions. For a large class of such differential equations the method enables us to find immediately the eigenvalues and a manufacturing process for the normalized eigenfunctions. These results are obtained merely by consulting a table of the six possible factorization types.\nThe manufacturing process is also used for the calculation of transition probabilities.\nThe method is generalized so that it will handle perturbation problems.",
+                    "source": "APS"
+                }],
+                "journal_title_variants": ["Rev.Mod.Phys.", "Rev. Mod. Phys."],
+                "earliest_date": "1951",
+                "author_count": 2,
+                "facet_author_name": ["1060927_Leopold Infeld", "NOREC_T.E. Hull"],
+                "dois": [{
+                    "value": "10.1103/RevModPhys.23.21"
+                }],
+                "titles": [{
+                    "title": "The factorization method"
+                }],
+                "$schema": "https://inspirehep.net/schemas/records/hep.json",
+                "curated": true,
+                "texkeys": ["Infeld:1951mw"],
+                "citeable": true,
+                "keywords": [{
+                    "value": "inspirereview:I-b-1",
+                    "source": "author"
+                }],
+                "refereed": true,
+                "document_type": ["article"],
+                "preprint_date": "1951",
+                "control_number": 3542,
+                "legacy_version": "20200430223102.0",
+                "number_of_pages": 48,
+                "publication_type": ["review"],
+                "inspire_categories": [{
+                    "term": "Math and Math Physics"
+                }],
+                "legacy_creation_date": "1997-07-11",
+                "external_system_identifiers": [{
+                    "value": "4422927",
+                    "schema": "OSTI"
+                }, {
+                    "value": "1951RvMP...23...21I",
+                    "schema": "ADS"
+                }, {
+                    "value": "SPIRES-123811",
+                    "schema": "SPIRES"
+                }]
+            },
+            "id": "3542",
+            "updated": "2021-06-26T09:34:29.342194+00:00",
+            "created": "1997-07-11T00:00:00+00:00"
+        }],
+        "total": 9797
+    },
+    "links": {
+        "self": "https://inspirehep.net/api/literature/?q=control_number%3A1-%3E10000&size=10&page=1",
+        "next": "https://inspirehep.net/api/literature/?q=control_number%3A1-%3E10000&size=10&page=2",
+        "bibtex": "https://inspirehep.net/api/literature/?q=control_number%3A1-%3E10000&size=10&page=1&format=bibtex",
+        "latex-eu": "https://inspirehep.net/api/literature/?q=control_number%3A1-%3E10000&size=10&page=1&format=latex-eu",
+        "latex-us": "https://inspirehep.net/api/literature/?q=control_number%3A1-%3E10000&size=10&page=1&format=latex-us",
+        "json": "https://inspirehep.net/api/literature/?q=control_number%3A1-%3E10000&size=10&page=1&format=json",
+        "cv": "https://inspirehep.net/api/literature/?q=control_number%3A1-%3E10000&size=10&page=1&format=cv"
+    }
+}

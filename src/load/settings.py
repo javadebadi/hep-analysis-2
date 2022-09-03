@@ -4,9 +4,13 @@
 from neo4j import GraphDatabase
 
 # Create a new Driver instance
+USERNAME = "neo4j"
+PASSWORD = "test"
+URI = "bolt://localhost:7687"
+
 DRIVER = GraphDatabase.driver(
-    "bolt://localhost:7687",
-    auth=("neo4j", "test")
+    URI,
+    auth=(USERNAME, PASSWORD)
     )
 
 # verify connection
